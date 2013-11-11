@@ -1,10 +1,14 @@
-﻿let summa list1 list2 =
+﻿module addition
+
+let main list1 list2 =
     let rec digit l =
         match l with
         |h::t -> h < 10 && h > -10 && digit t
         |[] -> true
 
-    if (List.head list1 = 1 || List.head list1 = -1) && (List.head list2 = 1 || List.head list2 = -1) && List.length list1 > 1 && List. length list2 > 1 && digit list1 && digit list2
+    if (List.head list1 = 1 || List.head list1 = -1) && 
+       (List.head list2 = 1 || List.head list2 = -1) && 
+       List.length list1 > 1 && List. length list2 > 1 && digit list1 && digit list2
     then
         let rec ravno l1_1 l2_2 =
             if List.length l1_1 > List.length l2_2 
@@ -57,14 +61,16 @@
         then list1.Head::(addX (List.rev list1.Tail) (List.rev list2.Tail) 0  list2.Head list1.Head|> List.rev |> cutting)
         elif m = 2 && List.head list1 < List.head list2
         then list2.Head::(addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list2.Head  list1.Head |> List.rev |> cutting)
-        elif (m = 2 && List.head list1 = List.head list2) || (m = 0 && List.head list1 = List.head list2) || (m = 1  && List.head list1 = List.head list2)
+        elif (m = 2 && List.head list1 = List.head list2) || 
+             (m = 0 && List.head list1 = List.head list2) || 
+             (m = 1  && List.head list1 = List.head list2)
         then list2.Head::(addX (List.rev list2.Tail) (List.rev list1.Tail) 0 1  1 |> List.rev |> cutting)
         elif m = 2 && List.head list1 > List.head list2
         then list2.Head::(addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list1.Head  list2.Head |> List.rev |> cutting)
         else 1::[0]
     else failwith "error number format" 
          
-printfn "res = %A" (summa [-1; 6; 6; 0] [-1; 6; 6; 0])
-printfn "res2 = %A" (summa [-1; 9; 9; 9] [-1; 8; 8; 8])
-printfn "res2 = %A" (summa [-1; 8; 8; 8] [-1; 9; 9; 9])
-printfn "res3 = %A" (summa [1; 6; 6;] [-1; 7; 5; 9])
+printfn "res = %A" (main [-1; 6; 6; 0] [-1; 6; 6; 0])
+printfn "res2 = %A" (main [-1; 9; 9; 9] [-1; 8; 8; 8])
+printfn "res2 = %A" (main [-1; 8; 8; 8] [-1; 9; 9; 9])
+printfn "res3 = %A" (main [1; 6; 6;] [-1; 7; 5; 9])
