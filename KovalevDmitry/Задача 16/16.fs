@@ -39,7 +39,10 @@
         match lst1, lst2 with   
         | hd :: tl, [0]  
         | [0], hd :: tl -> hd :: tl
-        | [], [] -> []    
+        | [], [] -> 
+            if s = 1 
+            then 1 :: []  
+            else []                        
         | hd1 :: [], hd2 :: [] -> 
             let hdSum = hd1 * z + hd2 * x + s 
             if hdSum >= 10 
@@ -49,27 +52,26 @@
             else hdSum :: [] 
         | hd1 :: tl1, [] -> 
             let h1s = hd1 * z + s 
-            if s = 1 
-            then h1s :: tl1
-            elif s = -1               
-            then hd1 - 1 :: tl1
-            else hd1 :: tl1 
+            if h1s > 9 
+            then (h1s - 10) :: sum tl1 [] 1 z x
+            elif h1s < 0 
+            then (h1s + 10) :: sum tl1 [] -1 z x
+            else h1s :: tl1           
         | [], hd2 :: tl2 -> 
-            let h2s = hd2 * x + s
-            if s = 1 
-            then h2s :: tl2
-            elif s = -1  
-            then hd2 - 1 :: tl2
-            else hd2 :: tl2                 
+            let h2s = hd2 * x + s 
+            if h2s > 9 
+            then (h2s - 10) :: sum tl2 [] 1 z x
+            elif h2s < 0 
+            then (h2s + 10) :: sum tl2 [] -1 z x
+            else h2s :: tl2         
         | hd1 :: tl1, hd2 :: tl2 -> 
             let hdSum = hd1 * z + hd2 * x + s  
             if hdSum >= 10  
             then  hdSum - 10 :: sum tl1 tl2 1 z x                                  
             elif hdSum < 0 
             then hdSum + 10 :: sum tl1 tl2 -1 z x                                 
-            else hdSum :: sum tl1 tl2 0 z x                         
-                 
-    
+            else hdSum :: sum tl1 tl2 0 z x     
+            
     if digitCheck lst1 && digitCheck lst2
     then
         if posModulCheck && l1Head = -1 && l2Head = -1
@@ -80,11 +82,11 @@
         elif l1Head = 1 && l2Head = -1  || l1Head = -1 && l2Head = 1            
         then -1 :: (sum l1Rev l2Rev 0 l2Head l1Head |> List.rev |> nullCut)                 
         else  1 :: (sum l1Rev l2Rev 0 1 1 |> List.rev |> nullCut )
-    else failwith "Incorrect digit in list (digit > 9)"  
+    else failwith "Incorrect digit in list (digit > 9)"    
     
 main [1; 9; 9] [-1; 1; 0; 0] |> printfn "%A"     
 main [-1; 6; 6; 6] [1; 1; 0; 0; 0] |> printfn "%A"
 main [1; 6; 5; 9; 9] [1; 3; 4; 0; 2] |> printfn "%A"   
 main [-1; 8; 2; 3; 0] [-1; 4; 0; 2; 5] |> printfn "%A"
-main [1;6;6;0] [-1;6;6;0] |> printfn "%A"
+main [1; 6; 6; 0] [-1; 6; 6; 0] |> printfn "%A"
 main [-1; 13; 2] [1; 8] |> printfn "%A"  

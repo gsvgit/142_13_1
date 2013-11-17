@@ -1,9 +1,0 @@
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\Задача_16.exe.config
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\Задача_16.XML
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\Задача_16.exe
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\Задача_16.pdb
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\FSharp.Core.dll
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\FSharp.Core.xml
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\bin\Debug\ru\FSharp.Core.resources.dll
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\obj\Debug\Задача_16.exe
-c:\users\user\documents\visual studio 2013\Projects\Задача 16\Задача 16\obj\Debug\Задача_16.pdb

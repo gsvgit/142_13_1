@@ -1,9 +1,0 @@
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\KovalevDmitry_14.exe.config
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\KovalevDmitry_14.XML
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\KovalevDmitry_14.exe
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\KovalevDmitry_14.pdb
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\FSharp.Core.dll
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\FSharp.Core.xml
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\bin\Debug\ru\FSharp.Core.resources.dll
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\obj\Debug\KovalevDmitry_14.exe
-c:\users\user\documents\visual studio 2013\Projects\KovalevDmitry_14\KovalevDmitry_14\obj\Debug\KovalevDmitry_14.pdb

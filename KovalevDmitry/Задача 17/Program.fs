@@ -26,18 +26,25 @@
         match lst1, lst2 with   
         | hd :: tl, [0]  
         | [0], hd :: tl -> hd :: tl
-        | [], [] -> []    
+        | [], [] -> 
+            if s = 1
+            then 1 :: []
+            else []                
         | hd1 :: [], hd2 :: [] -> 
             let hdSum = hd1 + hd2 + s 
             if hdSum >= 10 
             then hdSum - 10 :: [1]            
             else hdSum :: [] 
-        | hd :: tl, [] 
+        | hd :: tl, [] ->
+            let hs = hd + s
+            if hs > 9
+            then (hs - 10) :: sum tl [] 1
+            else hs :: tl
         | [], hd :: tl ->    
             let hs = hd + s
-            if s = 1 
-            then hs :: tl            
-            else hd :: tl                 
+            if hs > 9
+            then (hs - 10) :: sum [] tl 1
+            else hs :: tl                             
         | hd1 :: tl1, hd2 :: tl2 -> 
             let hdSum = hd1 + hd2 + s  
             if hdSum >= 10  
