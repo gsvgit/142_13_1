@@ -10,5 +10,6 @@ printfn "FibJustMatrix = %A" (fibMatrix 400)
 printfn ""
 printfn "FibMatrixLog = %A" (fibMatrixLog 400)
 printfn ""
-printfn "Числа Фибоначчи до n = %A" (fibArray 5)
+printfn "Fibonacci numbers from 1 to n : %A" (fibArray 5)
+printfn ""
 

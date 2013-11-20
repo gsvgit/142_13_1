@@ -1,4 +1,6 @@
-﻿let main (lst1: int list) (lst2: int list) =    
+﻿module Multiplication
+
+let multList (lst1: int list) (lst2: int list) =    
  
     let rec digitCheck lst =
         match lst with
@@ -70,8 +72,8 @@
         else signCheck lst1.Head lst2.Head :: List.rev (multiList (List.rev lst1.Tail) (List.rev lst2.Tail) 0)                   
     else failwith "Incorrect input list"
           
-main [1; 9; 9] [-1; 1; 0; 0] |> printfn "%A"     
-main [1; 6; 5; 0] [1; 3; 0] |> printfn "%A"   
-main [-1; 8; 2; 3; 0] [-1; 4; 0; 2; 5] |> printfn "%A"
-main [1; 4; 2] [0] |> printfn "%A"
-main [1; 15; 4] [-1; 6; 7] |> printfn "%A" 
+multList [1; 9; 9] [-1; 1; 0; 0] |> printfn "%A"     
+multList [1; 6; 5; 0] [1; 3; 0] |> printfn "%A"   
+multList [-1; 8; 2; 3; 0] [-1; 4; 0; 2; 5] |> printfn "%A"
+multList [1; 4; 2] [0] |> printfn "%A"
+multList [1; 15; 4] [-1; 6; 7] |> printfn "%A" 

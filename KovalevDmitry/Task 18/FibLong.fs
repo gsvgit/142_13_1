@@ -4,10 +4,10 @@ type Long =
     | Num of list<int>
     static member (++) ((l1:Long), (l2:Long)) =
         match l1, l2 with
-        | Num lst1, Num lst2 -> Num (List.tail (LongArifm.summa (1::lst1) (1::lst2)))
+        | Num lst1, Num lst2 -> Num (List.tail (Addition.summa (1::lst1) (1::lst2)))
     static member (+*+) ((l1:Long), (l2:Long)) =
         match l1, l2 with
-        | Num lst1, Num lst2 -> Num (List.tail (LongArifm.multList (1::lst1) (1::lst2))) 
+        | Num lst1, Num lst2 -> Num (List.tail (Multiplication.multList (1::lst1) (1::lst2))) 
         
 let rec fibRec n =    
     if n < 1
