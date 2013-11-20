@@ -5,9 +5,9 @@ VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 18", "Task 18.fsproj", "{A7D851A4-9391-4752-840C-E307614E5224}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 16", "..\..\142_13_1\KovalevDmitry\Task 16\Task 16.fsproj", "{7D705D4A-EAC8-4B67-85F2-256DC73CCE09}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 16", "..\Task 16\Task 16.fsproj", "{7D705D4A-EAC8-4B67-85F2-256DC73CCE09}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 17", "..\..\142_13_1\KovalevDmitry\Task 17\Task 17.fsproj", "{F01D20D2-F151-4133-B7B7-79AFF4F1677A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 17", "..\Task 17\Task 17.fsproj", "{F01D20D2-F151-4133-B7B7-79AFF4F1677A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
