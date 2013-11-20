@@ -59,17 +59,17 @@ let main list1 list2 =
 
         let m = equal list1.Tail list2.Tail 
         if m = 1 && List.head list1 > List.head list2
-        then list1.Head :: ((addX (List.rev list1.Tail) (List.rev list2.Tail) 0 list1.Head  list2.Head) |> ending)
+        then list1.Head :: (addX (List.rev list1.Tail) (List.rev list2.Tail) 0 list1.Head  list2.Head |> ending)
         elif m = 1 && List.head list1 < List.head list2
-        then list1.Head :: ((addX (List.rev list1.Tail) (List.rev list2.Tail) 0  list2.Head list1.Head) |> ending)
+        then list1.Head :: (addX (List.rev list1.Tail) (List.rev list2.Tail) 0  list2.Head list1.Head |> ending)
         elif m = 2 && List.head list1 < List.head list2
-        then list2.Head :: ((addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list2.Head  list1.Head) |> ending)
+        then list2.Head :: (addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list2.Head  list1.Head |> ending)
         elif (m = 2 && List.head list1 = List.head list2) ||
              (m = 0 && List.head list1 = List.head list2) ||
              (m = 1  && List.head list1 = List.head list2)
-        then list2.Head :: ((addX (List.rev list2.Tail) (List.rev list1.Tail) 0 1  1) |> ending)
+        then list2.Head :: (addX (List.rev list2.Tail) (List.rev list1.Tail) 0 1  1 |> ending)
         elif m = 2 && List.head list1 > List.head list2
-        then list2.Head :: ((addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list1.Head  list2.Head) |> ending)
+        then list2.Head :: (addX (List.rev list2.Tail) (List.rev list1.Tail) 0 list1.Head  list2.Head |> ending)
         else 1::[0]
     else failwith "error number format" 
          
