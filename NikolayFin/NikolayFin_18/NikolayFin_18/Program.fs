@@ -5,10 +5,10 @@
         | Num lst1, Num lst2 -> Num (Addition.main (1::lst1) (1::lst2) |> List.tail) 
     static member (--) ((l1:Long), (l2:Long)) =
         match l1, l2 with
-        | Num lst1, Num lst2 -> Num (Addition.main (1::lst1) (-1::lst2)|> List.tail)  
+        | Num lst1, Num lst2 -> Num (Addition.main (1::lst1) (-1::lst2) |> List.tail)  
     static member (+*) ((l1:Long), (l2:Long)) =
         match l1,l2 with
-        | Num lst1, Num lst2 -> Num (Multiplication.main (1::lst1) (1::lst2)|> List.tail)     
+        | Num lst1, Num lst2 -> Num (Multiplication.main (1::lst1) (1::lst2) |> List.tail)     
 let rec mainRec fibN =
     if fibN < 1
     then failwith "An invalid value FibN"
@@ -27,7 +27,7 @@ let mainIt fibN =
     else  
         let fibN1 = ref (Num [1])
         let fibN2 = ref (Num [1])
-        for i in 1 .. fibN - 2 do
+        for i in 1..fibN - 2 do
             fibN2 := !fibN2 ++ !fibN1
             fibN1 := !fibN2 -- !fibN1
         !fibN2
