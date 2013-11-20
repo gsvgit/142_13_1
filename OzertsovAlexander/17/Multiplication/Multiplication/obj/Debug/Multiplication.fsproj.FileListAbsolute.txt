@@ -1,0 +1,9 @@
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\Multiplication.exe.config
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\Multiplication.XML
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\Multiplication.exe
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\Multiplication.pdb
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\FSharp.Core.dll
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\FSharp.Core.xml
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\bin\Debug\ru\FSharp.Core.resources.dll
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\obj\Debug\Multiplication.exe
+F:\Git\GitHub\142_13_1\OzertsovAlexander\17\Multiplication\Multiplication\obj\Debug\Multiplication.pdb
