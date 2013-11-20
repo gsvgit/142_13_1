@@ -1,5 +1,12 @@
 ﻿module Multiplication
 let main (list1:List< _ >) (list2:List< _ >) = 
+    let rec deletingZero list =
+        match list with
+        |[] -> [0]
+        |hd::tl ->
+            if hd = 0
+            then deletingZero tl
+            else hd::tl  
     let rec TwoValuedNumber lst =
         match lst with
         |hd::tl -> hd < 10 && TwoValuedNumber tl
@@ -48,8 +55,8 @@ let main (list1:List< _ >) (list2:List< _ >) =
             |hd4::tl4 ->
                 addition (multiplication hd4 list1 0 disch) (multi list1 tl4 (disch + 1) ) 0 1 1 
         if List.head list1 = List.head list1
-        then 1::(multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev)
-        else -1::(multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev)
-printfn "1. = %A" (main [1; 9; 9; 9] [1; 8; 8; 8])
+        then 1::(multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> deletingZero)
+        else -1::(multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> deletingZero)
+printfn "1. = %A" (main [1; 9; 9; 9] [1; 0])
 printfn "2. = %A" (main [-1; 1; 2; 3] [-1; 1; 2; 3])  
 printfn "3. = %A" (main [] [-1; 1; 2; 3])        
