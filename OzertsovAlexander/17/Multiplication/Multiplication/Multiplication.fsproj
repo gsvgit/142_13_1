@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b82f5bd1-0b8f-434f-9881-a1d25e09d930</ProjectGuid>
+    <ProjectGuid>c4db1608-5ad0-4b5b-86b8-98f1df3a0d6c</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_18</RootNamespace>
-    <AssemblyName>_18</AssemblyName>
+    <RootNamespace>Multiplication</RootNamespace>
+    <AssemblyName>Multiplication</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>18</Name>
+    <Name>Multiplication</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Multiplication.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Multiplication.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -47,21 +47,8 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All tasks.fs" />
-    <Compile Include="tests.fs" />
+    <Compile Include="multi.fs" />
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\OzertsovAlexander\16\Addition.fsproj">
-      <Name>Addition</Name>
-      <Project>{69e8002f-6330-4a04-8076-d0dea34ef612}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\17\Multiplication\Multiplication\Multiplication.fsproj">
-      <Name>Multiplication</Name>
-      <Project>{c4db1608-5ad0-4b5b-86b8-98f1df3a0d6c}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
