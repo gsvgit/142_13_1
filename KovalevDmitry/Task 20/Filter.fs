@@ -12,7 +12,7 @@
         then hd :: filter tl arr
         else filter tl arr                   
 
-printfn "%A" (filter [1; 3; 1; 2; 1; 5; 3] [|5;3|])
+printfn "%A" (filter [1; 3; 1; 2; 1; 5; 3] [|5; 3|])
 printfn "%A" (filter [0] [|1; 8|])
 printfn "%A" (filter [] [||])
 printfn "%A" (filter [5; 6] [||])
