@@ -50,12 +50,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\142_13_1\KovalevDmitry\Task 16\Task 16.fsproj">
+    <ProjectReference Include="..\Task 16\Task 16.fsproj">
       <Name>Task 16</Name>
       <Project>{7d705d4a-eac8-4b67-85f2-256dc73cce09}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\142_13_1\KovalevDmitry\Task 17\Task 17.fsproj">
+    <ProjectReference Include="..\Task 17\Task 17.fsproj">
       <Name>Task 17</Name>
       <Project>{f01d20d2-f151-4133-b7b7-79aff4f1677a}</Project>
       <Private>True</Private>

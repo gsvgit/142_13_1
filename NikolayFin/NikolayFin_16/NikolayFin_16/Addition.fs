@@ -1,5 +1,5 @@
 ﻿module Addition
-let main (list1:List< _ >) (list2:List< _ >) = 
+let main (list1:List<_>) (list2:List<_>) = 
     let rec TwoValuedNumber lst =
             match lst with
             |hd::tl -> hd < 10 && TwoValuedNumber tl
@@ -40,7 +40,7 @@ let main (list1:List< _ >) (list2:List< _ >) =
                 elif sum1 >= 0 && sum1 < 10
                 then sum1::addition tl1 tl2 (sum1 / 10) sign1 sign2                                        
                 else 10 + sum1::addition tl1 tl2 -1 sign1 sign2                 
-            |hd1::tl1,[] 
+            |hd1::tl1, [] 
             |[], hd1::tl1 ->                 
                 let sum2 = hd1 * 1 + excess 
                 if sum2 > 9 
