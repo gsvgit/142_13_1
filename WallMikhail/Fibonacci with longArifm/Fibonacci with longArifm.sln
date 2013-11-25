@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fibonacci with longArifm", "Fibonacci with longArifm\Fibonacci with longArifm.fsproj", "{09E11A68-F48A-47CD-AC76-40219DB158DC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LongArifmMulti", "..\LongArifmMulti\LongArifmMulti\LongArifmMulti.fsproj", "{2B758DD6-227C-4BBC-A37C-AA2709632EBF}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LongArifmSum", "..\LongArifmSum\LongArifmSum\LongArifmSum.fsproj", "{E11DE97C-84DA-4C70-8861-92EDE43B779B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09E11A68-F48A-47CD-AC76-40219DB158DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E11A68-F48A-47CD-AC76-40219DB158DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E11A68-F48A-47CD-AC76-40219DB158DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E11A68-F48A-47CD-AC76-40219DB158DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B758DD6-227C-4BBC-A37C-AA2709632EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B758DD6-227C-4BBC-A37C-AA2709632EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B758DD6-227C-4BBC-A37C-AA2709632EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B758DD6-227C-4BBC-A37C-AA2709632EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11DE97C-84DA-4C70-8861-92EDE43B779B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11DE97C-84DA-4C70-8861-92EDE43B779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11DE97C-84DA-4C70-8861-92EDE43B779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11DE97C-84DA-4C70-8861-92EDE43B779B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
