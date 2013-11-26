@@ -4,7 +4,7 @@
     printfn "%A" arrByte
     printfn ""
     
-    let (b: byte) = 1uy;    
+    let (b: byte) = 1uy    
     
     let (arrBit: byte array) = Array.create 8 0uy
     

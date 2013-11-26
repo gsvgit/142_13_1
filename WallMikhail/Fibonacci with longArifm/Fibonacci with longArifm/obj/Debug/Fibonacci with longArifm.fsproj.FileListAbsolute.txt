@@ -1,0 +1,16 @@
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\Fibonacci_with_longArifm.exe.config
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\Fibonacci_with_longArifm.XML
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\Fibonacci_with_longArifm.exe
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\Fibonacci_with_longArifm.pdb
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\FSharp.Core.dll
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\FSharp.Core.xml
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\obj\Debug\Fibonacci_with_longArifm.exe
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\obj\Debug\Fibonacci_with_longArifm.pdb
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmMulti.exe
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmSum.exe
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmMulti.pdb
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmMulti.xml
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmSum.pdb
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\bin\Debug\LongArifmSum.xml
+C:\Users\sony\142_13_1\WallMikhail\Fibonacci with longArifm\Fibonacci with longArifm\obj\Debug\Fibonacci with longArifm.fsprojResolveAssemblyReference.cache
