@@ -9,7 +9,7 @@ let main (lst1: int list) (lst2: int list) =
     let rec matchLst lst1 lst2 =  
         match lst1, lst2 with
         | [], [] -> false
-        | hd1::tl1, hd2::tl2 ->  hd1 > hd2 || matchLst tl1 tl2
+        | hd1 :: tl1, hd2 :: tl2 ->  hd1 > hd2 || matchLst tl1 tl2
         | _ -> failwith "wrong input"     
                   
     let checkSign (l1: int list) (l2: int list)  = 
@@ -32,7 +32,7 @@ let main (lst1: int list) (lst2: int list) =
     
     let rec checkDigit lst =
         match lst with
-        | [] -> true
+        | [] -> t rue
         | hd :: tl -> hd <= 9 && checkDigit tl 
                                    
     let checkPosSign = checkSign lst1 lst2
