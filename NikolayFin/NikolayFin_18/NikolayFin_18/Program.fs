@@ -2,13 +2,13 @@
     | Num of list<int>
     static member (++) ((l1:Long), (l2:Long)) =
         match l1,l2 with
-        | Num lst1, Num lst2 -> Num (Addition.main (1::lst1) (1::lst2) |> List.tail) 
+        | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (1 :: lst2) |> List.tail) 
     static member (--) ((l1:Long), (l2:Long)) =
         match l1, l2 with
-        | Num lst1, Num lst2 -> Num (Addition.main (1::lst1) (-1::lst2) |> List.tail)  
+        | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (-1 :: lst2) |> List.tail)  
     static member (+*) ((l1:Long), (l2:Long)) =
         match l1,l2 with
-        | Num lst1, Num lst2 -> Num (Multiplication.main (1::lst1) (1::lst2) |> List.tail)     
+        | Num lst1, Num lst2 -> Num (Multiplication.main (1 :: lst1) (1 :: lst2) |> List.tail)     
 let rec mainRec fibN =
     if fibN < 1
     then failwith "An invalid value FibN"
@@ -47,9 +47,9 @@ let mainRecIt fibN =
                 if i = fibN 
                 then fibN1
                 else fib (fibN1 ++ fibN2) fibN1 (i + 1)               
-            fib (Num [1]) (Num[1]) 2 
+            fib (Num [1]) (Num [1]) 2 
 printfn ""
-printfn "Iterative method without ref" 
+printfn "Iterative me1thod without ref" 
 printfn ""
 printfn "1. %A" (mainRecIt 25)
 printfn "2. %A" (mainRecIt 1)
@@ -88,7 +88,7 @@ let mainMatrix n =
             let matrix = [|Num [1]; Num [1]; Num [1]; Num [0]|]
             let rec fib n =
                 let fibN = Array.zeroCreate 4
-                let multiplicate (fibN1 : array< _ >) (fibN2 : array< _ >) =
+                let multiplicate (fibN1:array<_>) (fibN2:array<_>) =
                     fibN.[0] <- (fibN1.[0] +* fibN2.[0]) ++ (fibN1.[1] +* fibN2.[2])
                     fibN.[1] <- (fibN1.[0] +* fibN2.[1]) ++ (fibN1.[1] +* fibN2.[3])
                     fibN.[2] <- (fibN1.[2] +* fibN2.[0]) ++ (fibN1.[3] +* fibN2.[2])
@@ -102,7 +102,7 @@ let mainMatrix n =
                         let matrixEven = fib (n / 2)
                         multiplicate matrixEven matrixEven
                     else multiplicate (fib (n - 1)) matrix 
-            let number (fibNn : array< _ >) = fibNn.[1]
+            let number (fibNn:array<_>) = fibNn.[1]
             number (fib n)
 printfn ""
 printfn "Matrix (log)" 
@@ -125,5 +125,5 @@ let mainMatLog n =
 printfn ""
 printfn "Computation from 1 to n" 
 printfn ""
-printfn "1. %A" (mainMatLog 25)
-printfn "2. %A" (mainMatLog 1)
+printfn "1. %A" (mainMatLog 1)
+printfn "2. %A" (mainMatLog 2)
