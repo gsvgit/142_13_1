@@ -7,9 +7,9 @@ OzertsovAlexander/16/bin/Debug/Сумма.XML
 OzertsovAlexander/16/obj/Debug/Addition.fsproj.FileListAbsolute.txt
 OzertsovAlexander/16/obj/Debug/Сумма.pdb
 
-OzertsovAlexander/20/DeleteNumbers/DeleteNumbers.v12.suo
-OzertsovAlexander/20/DeleteNumbers/DeleteNumbers/bin/Debug/DeleteNumbers.exe.config
-OzertsovAlexander/20/DeleteNumbers/DeleteNumbers/bin/Debug/DeleteNumbers.pdb
+bin/
+obj/
+*.suo
 OzertsovAlexander/20/DeleteNumbers/DeleteNumbers/bin/Debug/DeleteNumbers.XML
 OzertsovAlexander/20/DeleteNumbers/DeleteNumbers/bin/Debug/FSharp.Core.xml
 OzertsovAlexander/20/DeleteNumbers/DeleteNumbers/obj/Debug/DeleteNumbers.fsproj.FileListAbsolute.txt
@@ -21,3 +21,5 @@ OzertsovAlexander/22/ConvertToArr/ConvertToArr/bin/Debug/ConvertToArr.XML
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/bin/Debug/FSharp.Core.xml
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.fsproj.FileListAbsolute.txt
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.pdb
+
+*.orig

@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>a7d851a4-9391-4752-840c-e307614e5224</ProjectGuid>
+    <ProjectGuid>f76d756c-2f6f-4ac8-8884-a5ee65ea28f1</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Задача_18</RootNamespace>
-    <AssemblyName>Задача_18</AssemblyName>
+    <RootNamespace>BulgakovAndrey_21</RootNamespace>
+    <AssemblyName>BulgakovAndrey_21</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>Задача 18</Name>
+    <Name>BulgakovAndrey_21</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\Задача_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BulgakovAndrey_21.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,32 +34,21 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\Задача_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\BulgakovAndrey_21.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FibLong.fs" />
-    <Compile Include="Result.fs" />
+    <Compile Include="Program.fs" />
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Task 16\Task 16.fsproj">
-      <Name>Task 16</Name>
-      <Project>{7d705d4a-eac8-4b67-85f2-256dc73cce09}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Task 17\Task 17.fsproj">
-      <Name>Task 17</Name>
-      <Project>{f01d20d2-f151-4133-b7b7-79aff4f1677a}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
