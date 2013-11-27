@@ -1,9 +1,0 @@
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\LongArifmSum.exe.config
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\LongArifmSum.XML
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\LongArifmSum.exe
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\LongArifmSum.pdb
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\FSharp.Core.dll
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\FSharp.Core.xml
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\bin\Debug\ru\FSharp.Core.resources.dll
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\obj\Debug\LongArifmSum.exe
-C:\Users\sony\142_13_1\WallMikhail\LongArifmSum\LongArifmSum\obj\Debug\LongArifmSum.pdb
