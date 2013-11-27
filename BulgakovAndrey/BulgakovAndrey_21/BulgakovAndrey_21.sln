@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_21", "BulgakovAndrey_21\BulgakovAndrey_21.fsproj", "{F76D756C-2F6F-4AC8-8884-A5EE65EA28F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F76D756C-2F6F-4AC8-8884-A5EE65EA28F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76D756C-2F6F-4AC8-8884-A5EE65EA28F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76D756C-2F6F-4AC8-8884-A5EE65EA28F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76D756C-2F6F-4AC8-8884-A5EE65EA28F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
