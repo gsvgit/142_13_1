@@ -108,12 +108,11 @@ let main lst lst2 =
     //Positive - Positive
     else List.rev (List.rev (cut (List.rev (go (List.rev lst) (List.rev lst2) 0))))
 //Plate of number given by the first digit. (1 or -1 at the beginning are not indicative of the sign and is the part of the number)
-main [-5] [-5;5]
-|> printfn "res = %A"
+main [-5] [-5; 5] |> printfn "res = %A"
 printfn "res2 = %A" (main [1; 6; 6; 0] [-1; 6; 6; 0])
 printfn "res3 = %A" (main [-1; 6; 6; 0] [1; 6; 6; 0])
 printfn "res4 = %A" (main [1; 6; 6; 0] [-1; 5; 7; 9])
-printfn "res4 = %A" (main [6;3] [6;3])
+printfn "res4 = %A" (main [6; 3] [6; 3])
 printfn "res5 = %A" (main [1; 6; 6; 0] [-1; 7; 5; 9])
 printfn "res6 = %A" (main [1] [-1; 6; 6; 0])
 printfn "res7 = %A" (main [-1; 6; 6; 0] [1])

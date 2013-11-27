@@ -76,12 +76,11 @@ let main lst1 lst2 =
         else znak lst1.Head lst2.Head :: List.rev (lstumn (List.rev lst1.Tail) (List.rev lst2.Tail) 0)
     else failwith "Incorrect input"
           
-main [-5] [-5;5]
-|> printfn "res = %A"
+main [-5] [-5; 5] |> printfn "res = %A"
 printfn "res2 = %A" (main [1; 6; 6; 0] [-1; 6; 6; 0])
 printfn "res3 = %A" (main [-1; 6; 6; 0] [1; 6; 6; 0])
 printfn "res4 = %A" (main [1; 6; 6; 0] [-1; 5; 7; 9])
-printfn "res4 = %A" (main [0;3] [6;3])
+printfn "res4 = %A" (main [0; 3] [6; 3])
 printfn "res5 = %A" (main [1; 6; 6; 0] [-1; 7; 5; 9])
 printfn "res6 = %A" (main [1] [-1; 6; 6; 0])
 printfn "res7 = %A" (main [-1; 6; 6; 0] [1])
