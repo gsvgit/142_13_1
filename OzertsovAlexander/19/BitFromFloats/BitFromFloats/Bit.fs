@@ -6,7 +6,7 @@
             convert array (count - 1)
         else printfn "  %A" array.[count] 
     
-    let con = [|0..7|]
+    let con = [|0 .. 7|]
     let arr = System.BitConverter.GetBytes(flt)
     
     
