@@ -21,3 +21,5 @@ OzertsovAlexander/22/ConvertToArr/ConvertToArr/bin/Debug/ConvertToArr.XML
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/bin/Debug/FSharp.Core.xml
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.fsproj.FileListAbsolute.txt
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.pdb
+
+*.orig
