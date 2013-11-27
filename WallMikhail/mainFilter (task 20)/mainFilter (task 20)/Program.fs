@@ -15,4 +15,4 @@
         else del l arr.[i]
     fil lst 0
 
-printfn "%A" (mainFilter [1; 8; 2; 2; 3; 5] [|1;2|])    
+printfn "%A" (mainFilter [9; 7; 1; 1; 3; 5; 5; 7; 4] [|1; 4; 7|])    
