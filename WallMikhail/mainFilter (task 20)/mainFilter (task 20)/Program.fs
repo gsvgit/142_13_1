@@ -16,9 +16,9 @@ let mainFilter (lst:List<int>) (arr:array<int>) =
             | [] -> []  
             | hd :: tl ->  
                 if searchEq 0 hd
-                    then hd :: filt tl 
-                    else filt tl 
+                then hd :: filt tl 
+                else filt tl 
     filt lst
                
-printfn "%A" (mainFilter [1; 3; 5; 6; 1] [|1; 3|]
-printfn "%A" (mainFilter [1; 5; 6] [||]
+printfn "%A" (mainFilter [1; 3; 5; 6; 1] [|1; 3|])
+printfn "%A" (mainFilter [1; 5; 6] [||])
