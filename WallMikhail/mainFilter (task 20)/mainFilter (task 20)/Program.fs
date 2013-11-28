@@ -1,18 +1,24 @@
-﻿let mainFilter lst (arr:int array) =
+let mainFilter (lst:List<int>) (arr:array<int>) =
 
-    let rec del l x =
-        match l with
-        | [] -> []
-        | h :: t ->
-            if h = x
-            then  del t x
-            else  h :: (del t x)
-
-    let rec fil l i =
-        if i < arr.Length - 1
-        then
-            fil (del l arr.[i]) (i + 1)
-        else del l arr.[i]
-    fil lst 0
-
-printfn "%A" (mainFilter [9; 7; 1; 1; 3; 5; 5; 7; 4] [|1; 4; 7|])    
+    let rec searchEq i x =
+            if  (i < arr.Length) && (x <> arr.[i]) 
+            then
+                if i = arr.Length - 1
+                then true
+                else searchEq (i + 1) x
+            else false
+            
+    let rec filt list = 
+        if arr = [||]
+        then list
+        else
+            match list with
+            | [] -> []  
+            | hd :: tl ->  
+                if searchEq 0 hd
+                then hd :: filt tl 
+                else filt tl 
+    filt lst
+               
+printfn "%A" (mainFilter [1; 3; 5; 6; 1] [|1; 3|])
+printfn "%A" (mainFilter [1; 5; 6] [||])
