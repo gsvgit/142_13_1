@@ -10,4 +10,4 @@
             else sum ar2 (ar2.Length - 1) + sum2 ar1 ar2 (i + 1)
         else 0
     sum2 ar1 ar1 0
-printfn "%A" (mainSum [|1;2;3|] [|1;2;3|])
+printfn "%A" (mainSum [|1; 2; 3|] [|1; 2; 3|])
