@@ -1,5 +1,6 @@
-﻿type List =
-| Lst of int * List
+﻿module MyType
+type MyList =
+| Lst of int * MyList
 | Empty
 
 

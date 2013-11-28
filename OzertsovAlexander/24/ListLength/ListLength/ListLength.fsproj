@@ -50,6 +50,13 @@
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\23\TypeList\TypeList\TypeList.fsproj">
+      <Name>TypeList</Name>
+      <Project>{a54aad82-fc22-4682-bfad-67aa03569116}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
