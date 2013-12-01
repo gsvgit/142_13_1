@@ -7,8 +7,8 @@ let func x =
     let rec main t = 
         match t with
         | Node (s, list) -> 
-                a := !a + 1
-                for i in 0..List.length list - 1 do main list.[i]
+            a := !a + 1
+            for i in 0..List.length list - 1 do main list.[i]
         | Leaf s ->  
             a := !a
     main x
