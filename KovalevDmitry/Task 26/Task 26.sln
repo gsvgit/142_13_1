@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 26", "Task 26.fsproj", "{86104C2E-F9C6-4D89-8F37-56933CB1B7C1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 25", "..\Task 25\Task 25.fsproj", "{7DB4D48B-1B96-4B7C-9B5F-760D6CFC1D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86104C2E-F9C6-4D89-8F37-56933CB1B7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86104C2E-F9C6-4D89-8F37-56933CB1B7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86104C2E-F9C6-4D89-8F37-56933CB1B7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86104C2E-F9C6-4D89-8F37-56933CB1B7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB4D48B-1B96-4B7C-9B5F-760D6CFC1D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB4D48B-1B96-4B7C-9B5F-760D6CFC1D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB4D48B-1B96-4B7C-9B5F-760D6CFC1D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB4D48B-1B96-4B7C-9B5F-760D6CFC1D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
