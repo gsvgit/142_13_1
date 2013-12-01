@@ -11,5 +11,8 @@
         then
             filt (del l arr.[i]) (i + 1)
         else del l arr.[i]
-    filt lst 0
-printfn "%A" (mainFilter [1; 8; 2; 2; 3; 5] [|1; 2|])    
+    if arr.Length > 0
+    then filt lst 0
+    else lst
+printfn "%A" (mainFilter [1; 8; 2; 2; 3; 5] [|1; 2|])
+printfn "%A" (mainFilter [1; 8; 2; 2; 3; 5] [||])
