@@ -1,4 +1,6 @@
-﻿type List = 
+﻿module MyT
+
+type List = 
     | Lst of int * List
     | Empty
 
