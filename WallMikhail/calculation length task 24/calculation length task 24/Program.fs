@@ -1,8 +1,8 @@
 ﻿open MyT
 
-let rec lstLength (lst: Tree) = 
+let rec lstLength lst = 
     match lst with 
-    | Lst (int, Tree) -> lstLength Tree + 1
+    | Lst (int, List) -> lstLength List + 1
     | Empty -> 0
 
 printfn "%A" (lstLength (Lst (124, Lst (24, Empty))))
