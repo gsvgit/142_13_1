@@ -1,4 +1,6 @@
-﻿type Tree =
+﻿module MyTypeTree
+
+type Tree =
     | Node of string * list<Tree>
     | Leaf of string
 
