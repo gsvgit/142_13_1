@@ -1,4 +1,3 @@
-﻿let main str =
-    let k = System.Random()
-    k.Next()
+﻿let main (str:string) =
+    int (str.[0])
 printfn "%A" (main "lol")   
