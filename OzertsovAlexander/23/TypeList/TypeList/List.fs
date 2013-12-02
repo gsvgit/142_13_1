@@ -1,4 +1,5 @@
 ﻿module MyType
+
 type MyList =
 | Lst of int * MyList
 | Empty
