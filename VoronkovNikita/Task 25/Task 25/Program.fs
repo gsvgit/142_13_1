@@ -5,8 +5,8 @@
     for i in 1..str.Length - 1 do
         if str.[i] = ' ' && str.[i - 1] <> ' '
         then a := !a + 1
-    printfn "There are %A words in this string" !a
-stringHash "              AC\DC                       "
-stringHash "      Back in black             "
-stringHash "  Rock'n'roll train"
-stringHash "Highway to hell"
+    !a
+printfn "%A" (stringHash "              AC\DC                       ")
+printfn "%A" (stringHash "      Back in black             ")
+printfn "%A" (stringHash "  Rock'n'roll train")
+printfn "%A" (stringHash "Highway to hell")
