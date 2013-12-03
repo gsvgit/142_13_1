@@ -32,7 +32,7 @@ let main (lst1: int list) (lst2: int list) =
     
     let rec checkDigit lst =
         match lst with
-        | [] -> t rue
+        | [] -> true
         | hd :: tl -> hd <= 9 && checkDigit tl 
                                    
     let checkPosSign = checkSign lst1 lst2
