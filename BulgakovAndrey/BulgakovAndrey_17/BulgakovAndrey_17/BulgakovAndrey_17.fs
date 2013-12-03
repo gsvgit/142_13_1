@@ -67,7 +67,7 @@ let main lst1 lst2 =
     
     if lst1 = [] || lst2 = []
     then failwith "Empty list"
-    elif lst1.Head <> -1 || lst2.Head <> -1 || lst1.Head <> 1 || lst2.Head <> 1 
+    elif lst1.Head <> -1 && lst2.Head <> -1 && lst1.Head <> 1 && lst2.Head <> 1 
     then failwith "Incorrect mark"  
     elif prov lst1 && prov lst2
     then         
@@ -75,8 +75,7 @@ let main lst1 lst2 =
         then [0]
         else znak lst1.Head lst2.Head :: List.rev (lstumn (List.rev lst1.Tail) (List.rev lst2.Tail) 0)
     else failwith "Incorrect input"
-          
-main [-5] [-5; 5] |> printfn "res = %A"
+
 printfn "res2 = %A" (main [1; 6; 6; 0] [-1; 6; 6; 0])
 printfn "res3 = %A" (main [-1; 6; 6; 0] [1; 6; 6; 0])
 printfn "res4 = %A" (main [1; 6; 6; 0] [-1; 5; 7; 9])

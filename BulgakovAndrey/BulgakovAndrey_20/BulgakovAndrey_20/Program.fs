@@ -4,8 +4,8 @@
         | [] -> []
         | h::t ->
             if h = n
-            then  del t n
-            else  h::del t n
+            then del t n
+            else h::del t n
     let rec filt l i =
         if i < arr.Length - 1
         then
