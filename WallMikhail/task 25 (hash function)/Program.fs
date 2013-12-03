@@ -1,4 +1,6 @@
-﻿let stringHash (s: string) = 
+﻿module Hash
+
+let stringHash (s: string) = 
     let h = ref 0
     for i in 0..s.Length - 1 do
         
