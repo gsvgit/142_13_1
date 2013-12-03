@@ -1,6 +1,6 @@
 ﻿open TypeList
 let length (lst:MyList) =
-    let k = ref 0;
+    let k = ref 0
     let rec leng (list:MyList) l =
         match list with
         | Lst(int, MyList) -> leng MyList (l + 1) 
