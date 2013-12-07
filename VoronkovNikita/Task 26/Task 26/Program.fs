@@ -1,4 +1,6 @@
-﻿let stringHash (str: string) = 
+﻿module hash
+
+let stringHash (str: string) = 
     let a = ref 0
     if (str.Length = 1 && str.[0] = ' ') || str.Length  = 0
     then a := 0

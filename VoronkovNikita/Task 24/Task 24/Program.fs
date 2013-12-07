@@ -1,6 +1,5 @@
-﻿type List = 
-    | Lst of int * List
-    | Empty
+﻿open myType
+
 let main lst = 
     let length = ref 0
     let rec help x = 
