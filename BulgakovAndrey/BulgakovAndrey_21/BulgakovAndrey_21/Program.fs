@@ -1,6 +1,7 @@
 ﻿let mainSum ar1 ar2 =
     let rec sum (a:int[]) j=
-        if j >= 0 then a.[j] + sum a (j - 1)
+        if j >= 0
+        then a.[j] + sum a (j - 1)
         else 0
     let rec sum2 (ar1:int[]) (ar2:int[]) i =
         if i <= ar1.Length - 1 
