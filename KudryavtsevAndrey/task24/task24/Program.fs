@@ -1,6 +1,4 @@
-﻿//open myType
-
-
+﻿
 type myList = 
     | Lst of int * myList
     | Empty
