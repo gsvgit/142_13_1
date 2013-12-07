@@ -1,4 +1,6 @@
-﻿type Tree = 
+﻿module Tree
+
+type Tree = 
     | Node of string * list<Tree>
     | Leaf of string
  
@@ -14,8 +16,12 @@ let func x =
     main x
     printfn "We have %A Nodes" !a
 
-func (Node ("in", [Node ("game", [Node ("of", [Leaf ("thrones"); Leaf ("you"); Leaf ("win")]); Leaf ("or")]); Leaf ("you"); Leaf ("die")]))
-
-
-
-
+func (Node ("in", 
+        [Node ("game", 
+            [Node ("of", 
+                [Leaf ("thrones"); 
+                 Leaf ("you"); 
+                 Leaf ("win")]); 
+                 Leaf ("or")]); 
+                 Leaf ("you"); 
+                 Leaf ("die")]))
