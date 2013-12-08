@@ -1,7 +1,4 @@
-﻿
-type myList = 
-    | Lst of int * myList
-    | Empty
+﻿open myType
 
 let rec lstLength lst = 
     match lst with 

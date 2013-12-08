@@ -1,4 +1,4 @@
-﻿module public myType
+﻿module myType
 
 type myList =
 | Lst of int * myList
