@@ -1,4 +1,5 @@
-﻿type Tree =
+﻿module TreeListTree
+type Tree =
     | Node of string * list<Tree>
     | Leaf of string
 let hashfun (str:string) =
