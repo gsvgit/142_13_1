@@ -54,7 +54,7 @@
       <Project>{a4414a19-a981-4011-816d-f19667d5305f}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\task 27\task 27\task 27.fsproj">
+    <ProjectReference Include="..\..\task 27 %28funcTree%29\task 27\task 27.fsproj">
       <Name>task 27</Name>
       <Project>{4a5c0c21-9b6b-47c5-b696-a6c37cdca690}</Project>
       <Private>True</Private>
