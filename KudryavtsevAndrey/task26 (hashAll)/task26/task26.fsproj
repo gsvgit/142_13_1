@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>292dc225-9f7a-4a41-a770-af66a47dea14</ProjectGuid>
+    <ProjectGuid>3b95c4e9-7a91-42d1-8a82-771fa9973557</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>task_28__ListOfTree_</RootNamespace>
-    <AssemblyName>task_28__ListOfTree_</AssemblyName>
+    <RootNamespace>task26</RootNamespace>
+    <AssemblyName>task26</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>task 28 (ListOfTree)</Name>
+    <Name>task26</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\task_28__ListOfTree_.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\task26.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\task_28__ListOfTree_.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\task26.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -49,14 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\task 23 %28type tree%29\task 23 %28type tree%29\task 23 %28type list%29.fsproj">
-      <Name>task 23 (type list)</Name>
-      <Project>{a4414a19-a981-4011-816d-f19667d5305f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\task 27 %28funcTree%29\task 27\task 27.fsproj">
-      <Name>task 27</Name>
-      <Project>{4a5c0c21-9b6b-47c5-b696-a6c37cdca690}</Project>
+    <ProjectReference Include="..\..\task25\task25\task25.fsproj">
+      <Name>task25</Name>
+      <Project>{8c1de304-74fc-4612-9972-f521082be113}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
