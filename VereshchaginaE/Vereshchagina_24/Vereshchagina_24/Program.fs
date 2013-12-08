@@ -1,8 +1,4 @@
-﻿module myType
-
-type MyList = 
-    | List of int * MyList
-    | Empty
+﻿open myType
 
 let length (list : MyList) =
     let len = ref 0

@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Vereshchagina_24", "Vereshchagina_24\Vereshchagina_24.fsproj", "{D122B7A5-335E-47E5-9B1C-6E9E281FD92A}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsoleApplication6", "..\Vereshchagina_23\ConsoleApplication6\ConsoleApplication6.fsproj", "{5C9D562F-25F5-460B-AB17-2CAF50BF465E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Vereshchagina_23", "..\Vereshchagina_23\Vereshchagina_23\Vereshchagina_23.fsproj", "{D87B4B0C-379A-46D2-982C-DF863582BE79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{D122B7A5-335E-47E5-9B1C-6E9E281FD92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D122B7A5-335E-47E5-9B1C-6E9E281FD92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D122B7A5-335E-47E5-9B1C-6E9E281FD92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9D562F-25F5-460B-AB17-2CAF50BF465E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9D562F-25F5-460B-AB17-2CAF50BF465E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9D562F-25F5-460B-AB17-2CAF50BF465E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9D562F-25F5-460B-AB17-2CAF50BF465E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87B4B0C-379A-46D2-982C-DF863582BE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87B4B0C-379A-46D2-982C-DF863582BE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87B4B0C-379A-46D2-982C-DF863582BE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87B4B0C-379A-46D2-982C-DF863582BE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

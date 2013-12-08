@@ -48,6 +48,13 @@
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Vereshchagina_23\Vereshchagina_23\Vereshchagina_23.fsproj">
+      <Name>Vereshchagina_23</Name>
+      <Project>{d87b4b0c-379a-46d2-982c-df863582be79}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
