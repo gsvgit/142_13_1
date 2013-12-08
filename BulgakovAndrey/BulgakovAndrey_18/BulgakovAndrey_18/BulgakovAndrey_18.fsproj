@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4f90daab-3cbe-4924-9145-ca94d6ab0dc1</ProjectGuid>
+    <ProjectGuid>4b17995b-fe46-4b3a-bf01-d3bec1736fdc</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BulgakovAndrey_26</RootNamespace>
-    <AssemblyName>BulgakovAndrey_26</AssemblyName>
+    <RootNamespace>BulgakovAndrey_18</RootNamespace>
+    <AssemblyName>BulgakovAndrey_18</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>BulgakovAndrey_26</Name>
+    <Name>BulgakovAndrey_18</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\BulgakovAndrey_26.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BulgakovAndrey_18.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\BulgakovAndrey_26.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\BulgakovAndrey_18.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -51,9 +51,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BulgakovAndrey_25\BulgakovAndrey_25\BulgakovAndrey_25.fsproj">
-      <Name>BulgakovAndrey_25</Name>
-      <Project>{68cb7fdf-8fca-4321-9ef7-ee7dd3d612c7}</Project>
+    <ProjectReference Include="..\..\BulgakovAndrey_16\BulgakovAndrey_16\BulgakovAndrey_16.fsproj">
+      <Name>BulgakovAndrey_16</Name>
+      <Project>{5458238f-ef64-4979-ab3a-2b3c75b16bd1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BulgakovAndrey_17\BulgakovAndrey_17\BulgakovAndrey_17.fsproj">
+      <Name>BulgakovAndrey_17</Name>
+      <Project>{04acc13f-dcff-47a9-85c3-a018a3e6d240}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

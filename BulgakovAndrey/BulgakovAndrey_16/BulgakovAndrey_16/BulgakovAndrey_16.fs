@@ -51,13 +51,13 @@ let main lst lst2 =
         | [] -> []
         | h :: t ->
            if h < 0 
-           then h * (-1) :: poli t
+           then h * -1 :: poli t
            else h :: poli t
     // The denial of the last item in the list
     let rec otric list =
         match list with
         | [] -> []
-        | h :: [] -> h * (-1) :: []
+        | h :: [] -> h * -1 :: []
         | h :: t -> h :: (otric t)
     // Comparisons of the two lists (all elements > 0)      
     let rec sravn lst1 lst2 =
