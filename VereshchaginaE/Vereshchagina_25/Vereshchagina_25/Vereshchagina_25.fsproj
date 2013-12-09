@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>a53a6eb3-eef9-494b-bb0a-1135c1924e69</ProjectGuid>
+    <ProjectGuid>62b3904e-06fd-4d37-b3cf-8d54126f024f</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Vereshchagina_25</RootNamespace>
     <AssemblyName>Vereshchagina_25</AssemblyName>
@@ -45,7 +45,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.fs" />
+    <Compile Include="Hash.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <PropertyGroup>

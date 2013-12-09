@@ -1,12 +1,12 @@
-﻿let stringHash str = 
-    let hash = ref 0
-    for i in 0..String.length str - 1 do
-        if i % 2 = 0 
-        then hash := !hash + int(str.[i]) 
-        else hash := !hash - int(str.[i])
-    if !hash < 0 
-    then hash := !hash * (-1)
-    hash
-    
-printfn "res = %A" (stringHash ("abcdefghijklmnopqrstuvwxyz"))
+﻿open Hash
+
+let rec hashAll (list : List<string>) =
+    match list with
+        | [] -> []
+        | head::tail -> Hash.stringHash head::hashAll tail
+        
+
+printfn "%A" (hashAll [])
+printfn "%A" (hashAll ["1"; "2"; "3"])
+printfn "%A" (hashAll ["Hello";"World"])
 
