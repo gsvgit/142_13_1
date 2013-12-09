@@ -1,4 +1,5 @@
-﻿
+﻿module TreeFunction
+
 type Tree = 
     | Node of string * list<Tree>
     | Leaf of string
