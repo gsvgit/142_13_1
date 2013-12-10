@@ -1,6 +1,9 @@
-﻿type Tree = 
+﻿module treeFunction
+
+type Tree = 
     | Node of string * list<Tree>
     | Leaf of string
+
 let f x = 
     let count = ref 0
     let rec main t = 
@@ -16,5 +19,4 @@ let f x =
             then count := !count + 1 
             else count := !count
     main x
-    printfn "There are %A strings which have 8 symbols" !count
-printfn "%A" (f (Node ("12345679", [Node ("8", [Node ("sdqwerty", [Leaf ("331 cows"); Leaf ("33 cows"); Leaf ("Wendigoo")]); Leaf ("1")]); Leaf ("HelloWor")])))
+    !count
