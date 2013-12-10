@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>df93d448-9d40-4e51-912b-61d048658347</ProjectGuid>
+    <ProjectGuid>564fea88-c815-4c88-86f2-1c60dd801b46</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Vereshchagina_26</RootNamespace>
     <AssemblyName>Vereshchagina_26</AssemblyName>
@@ -47,6 +47,13 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Vereshchagina_25\Vereshchagina_25\Vereshchagina_25.fsproj">
+      <Name>Vereshchagina_25</Name>
+      <Project>{62b3904e-06fd-4d37-b3cf-8d54126f024f}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

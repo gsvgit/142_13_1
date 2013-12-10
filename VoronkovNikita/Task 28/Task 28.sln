@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 28", "Task 28\Task 28.fsproj", "{3DA4A6CF-6E40-4529-8FBE-0FEB3F3F0504}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 27", "..\Task 27\Task 27\Task 27.fsproj", "{A853D725-6BCC-4ED4-8E2E-6CACDA5EDD88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{3DA4A6CF-6E40-4529-8FBE-0FEB3F3F0504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA4A6CF-6E40-4529-8FBE-0FEB3F3F0504}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA4A6CF-6E40-4529-8FBE-0FEB3F3F0504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A853D725-6BCC-4ED4-8E2E-6CACDA5EDD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A853D725-6BCC-4ED4-8E2E-6CACDA5EDD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A853D725-6BCC-4ED4-8E2E-6CACDA5EDD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A853D725-6BCC-4ED4-8E2E-6CACDA5EDD88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
