@@ -49,12 +49,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\142_13_1\142_13_1\KudryavtsevAndrey\task23\task23\task23.fsproj">
+    <ProjectReference Include="..\..\task23\task23\task23.fsproj">
       <Name>task23</Name>
       <Project>{b0b91bff-09be-4acb-ba38-a1dcb4462bab}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\142_13_1\142_13_1\KudryavtsevAndrey\task27 %28type Tree%29\task27\task27.fsproj">
+    <ProjectReference Include="..\..\task27 %28type Tree%29\task27\task27.fsproj">
       <Name>task27</Name>
       <Project>{822e7624-37e2-4c4c-a105-afeebb4509a5}</Project>
       <Private>True</Private>
