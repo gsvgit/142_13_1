@@ -8,7 +8,7 @@
         | Num l1, Num l2 -> Num (Addition.main l1 (((List.head l2) * -1) :: (List.tail l2)))
     static member (-*-) ((l1:Long), (l2:Long)) = 
         match l1, l2 with
-        | Num l1, Num l2 -> Num (List.tail(Multi.main (1 :: l1) (1 :: l2)))
+        | Num l1, Num l2 -> Num (List.tail (Multi.main (1 :: l1) (1 :: l2)))
 //Recursive
 let rec recurs n =
     if n = 1 || n = 2 
