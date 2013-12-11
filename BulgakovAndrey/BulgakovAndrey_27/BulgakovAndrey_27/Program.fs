@@ -3,9 +3,10 @@ type Tree =
     | Node of string * list<Tree>
     | Leaf of string
 let hashfun (str:string) =
-    int str.[0]
+    if str.Equals("") = true
+    then 0
+    else int str.[0]
 let inf tr =
-    let k = ref 0
     let rec infa tr1 t=
         let rec infa2 ls tk=
             match ls with
@@ -14,5 +15,6 @@ let inf tr =
         match tr1 with
         | Node (str, lst) -> infa2 lst (hashfun str)
         | Leaf (str) -> hashfun str
-    infa tr !k
+    infa tr 0
 printfn "%A" (inf (Node ("bba", [Node ("br", [Node ("brd", [Leaf "bfr"]) ]); Node ("brf", [Node ("brf", [Leaf "brf"]) ]) ])))
+printfn "%A" (inf (Leaf ""))

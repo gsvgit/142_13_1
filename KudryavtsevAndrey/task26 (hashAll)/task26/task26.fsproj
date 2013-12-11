@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\task25\task25\task25.fsproj">
+    <ProjectReference Include="..\..\task25 %28hash function%29\task25\task25.fsproj">
       <Name>task25</Name>
       <Project>{8c1de304-74fc-4612-9972-f521082be113}</Project>
       <Private>True</Private>

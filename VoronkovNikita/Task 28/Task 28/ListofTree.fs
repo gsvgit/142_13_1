@@ -1,4 +1,5 @@
-﻿open TreeFunction
+﻿open treeFunction
+
 type List = 
     | Lst of Tree * List
     | Empty

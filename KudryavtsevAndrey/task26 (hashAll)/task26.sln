@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task26", "task26\task26.fsproj", "{3B95C4E9-7A91-42D1-8A82-771FA9973557}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task25", "..\task25\task25\task25.fsproj", "{8C1DE304-74FC-4612-9972-F521082BE113}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task25", "..\task25 (hash function)\task25\task25.fsproj", "{8C1DE304-74FC-4612-9972-F521082BE113}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

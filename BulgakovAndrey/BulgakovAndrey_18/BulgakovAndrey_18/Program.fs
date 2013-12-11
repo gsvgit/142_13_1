@@ -1,14 +1,14 @@
 ﻿type Long =
-        |Num of list<int>
-        static member (++) ((l1:Long), (l2:Long)) = 
-            match l1, l2 with
-            |Num l1, Num l2 -> Num (Addition.main l1 l2)
-        static member (--) ((l1:Long), (l2:Long)) = 
-            match l1, l2 with
-            |Num l1, Num l2 -> Num (Addition.main l1 (((List.head l2)*(-1))::(List.tail l2)))
-        static member (-*-) ((l1:Long), (l2:Long)) = 
-            match l1, l2 with
-            |Num l1, Num l2 -> Num (List.tail(Multi.main (1::l1) (1::l2)))
+    | Num of list<int>
+    static member (++) ((l1:Long), (l2:Long)) = 
+        match l1, l2 with
+        | Num l1, Num l2 -> Num (Addition.main l1 l2)
+    static member (--) ((l1:Long), (l2:Long)) = 
+        match l1, l2 with
+        | Num l1, Num l2 -> Num (Addition.main l1 (((List.head l2) * -1) :: (List.tail l2)))
+    static member (-*-) ((l1:Long), (l2:Long)) = 
+        match l1, l2 with
+        | Num l1, Num l2 -> Num (List.tail(Multi.main (1 :: l1) (1 :: l2)))
 //Recursive
 let rec recurs n =
     if n = 1 || n = 2 
@@ -49,10 +49,10 @@ let mat n =
     let arr1 = [|Num [1]; Num [1]; Num [1]; Num [0]|]
     let arr2 = [|Num [1]; Num [1]; Num [1]; Num [0]|]
     for i in 1..n do
-        arr1.[0] <- arr.[0] -*- arr2.[0] ++ arr.[1] -*- arr2.[2]
-        arr1.[1] <- arr.[0] -*- arr2.[1] ++ arr.[1] -*- arr2.[3]
-        arr1.[2] <- arr.[2] -*- arr2.[0] ++ arr.[3] -*- arr2.[2]
-        arr1.[3] <- arr.[2] -*- arr2.[1] ++ arr.[3] -*- arr2.[3]
+        arr1.[0] <- (arr.[0] -*- arr2.[0]) ++ (arr.[1] -*- arr2.[2])
+        arr1.[1] <- (arr.[0] -*- arr2.[1]) ++ (arr.[1] -*- arr2.[3])
+        arr1.[2] <- (arr.[2] -*- arr2.[0]) ++ (arr.[3] -*- arr2.[2])
+        arr1.[3] <- (arr.[2] -*- arr2.[1]) ++ (arr.[3] -*- arr2.[3])
         arr.[0] <- arr1.[0]
         arr.[1] <- arr1.[1]
         arr.[2] <- arr1.[2]
