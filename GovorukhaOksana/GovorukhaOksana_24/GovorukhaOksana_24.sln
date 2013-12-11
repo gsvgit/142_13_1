@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GovorukhaOksana_24", "GovorukhaOksana_24\GovorukhaOksana_24.fsproj", "{9B808DE3-B2D3-48A0-BCEE-647EBE84C487}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GovorukhaOksana_23", "..\GovorukhaOksana_23\GovorukhaOksana_23\GovorukhaOksana_23.fsproj", "{09E2EAA3-5B40-43E2-BC46-600588B2CD38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B808DE3-B2D3-48A0-BCEE-647EBE84C487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B808DE3-B2D3-48A0-BCEE-647EBE84C487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B808DE3-B2D3-48A0-BCEE-647EBE84C487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B808DE3-B2D3-48A0-BCEE-647EBE84C487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E2EAA3-5B40-43E2-BC46-600588B2CD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E2EAA3-5B40-43E2-BC46-600588B2CD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E2EAA3-5B40-43E2-BC46-600588B2CD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E2EAA3-5B40-43E2-BC46-600588B2CD38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
