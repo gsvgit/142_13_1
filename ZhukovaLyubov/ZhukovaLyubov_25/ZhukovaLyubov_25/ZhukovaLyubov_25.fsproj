@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>1905d29a-2d2e-4685-8bd4-010754bcb1e5</ProjectGuid>
+    <ProjectGuid>6152785f-d90e-4933-974d-6cb9e129dd83</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApplication6</RootNamespace>
-    <AssemblyName>ConsoleApplication6</AssemblyName>
+    <RootNamespace>ZhukovaLyubov_25</RootNamespace>
+    <AssemblyName>ZhukovaLyubov_25</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>ConsoleApplication6</Name>
+    <Name>ZhukovaLyubov_25</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\ConsoleApplication6.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\ZhukovaLyubov_25.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\ConsoleApplication6.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ZhukovaLyubov_25.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -45,7 +45,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hash_25.fs" />
+    <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <PropertyGroup>

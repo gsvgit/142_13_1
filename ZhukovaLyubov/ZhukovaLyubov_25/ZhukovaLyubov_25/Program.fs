@@ -1,4 +1,5 @@
-﻿let strHash (str: string) = 
+﻿module Hash25
+let strHash (str: string) = 
     let hash = ref 1
     if (str.Length = 0 || str.Length = 1 && str.[0] = ' ')  
     then hash := !hash - 1
@@ -10,3 +11,4 @@ printfn "%A" (strHash "abcdefg")
 printfn "%A" (strHash "5r")
 printfn "%A" (strHash "john16")
 printfn "%A" (strHash "")
+
