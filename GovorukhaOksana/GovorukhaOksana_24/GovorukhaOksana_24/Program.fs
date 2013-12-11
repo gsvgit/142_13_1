@@ -1,11 +1,11 @@
 ﻿open typeList
 
-let lengthList( x: myList) = 
+let lengthList (x: myList) = 
     let l = ref 0
-    let rec count ( x: myList) = 
+    let rec count (x: myList) = 
         match x with
-        | Lst(int, myList) -> l := !l + 1
-                              count myList
+        | Lst (int, myList) -> l := !l + 1
+                               count myList
         | Empty -> !l
     count x
     
