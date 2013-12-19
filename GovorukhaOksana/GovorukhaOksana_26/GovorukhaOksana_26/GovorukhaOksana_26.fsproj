@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>ad33983a-0ac6-42bb-a313-2d11093d0dcc</ProjectGuid>
+    <ProjectGuid>3744d247-eed9-4e20-94a9-efba74ae2238</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>GovorukhaOksana_26</RootNamespace>
     <AssemblyName>GovorukhaOksana_26</AssemblyName>
@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Сергей\Documents\Visual Studio 2012\Projects\GovorukhaOksana_25\GovorukhaOksana_25\GovorukhaOksana_25.fsproj">
+    <ProjectReference Include="..\..\GovorukhaOksana_25\GovorukhaOksana_25\GovorukhaOksana_25.fsproj">
       <Name>GovorukhaOksana_25</Name>
       <Project>{bc656a96-75db-4e69-9692-720aee3d578c}</Project>
       <Private>True</Private>

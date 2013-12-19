@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>2573b28d-4093-4bc0-b590-6df3b8f8320d</ProjectGuid>
+    <ProjectGuid>7a449bd2-6edd-4cca-864e-1cbbef01a4e8</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GovorukhaOksana_24</RootNamespace>
-    <AssemblyName>GovorukhaOksana_24</AssemblyName>
+    <RootNamespace>GovorukhaOksana_19</RootNamespace>
+    <AssemblyName>GovorukhaOksana_19</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>GovorukhaOksana_24</Name>
+    <Name>GovorukhaOksana_19</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\GovorukhaOksana_24.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\GovorukhaOksana_19.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\GovorukhaOksana_24.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\GovorukhaOksana_19.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -47,13 +47,6 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\GovorukhaOksana_23\GovorukhaOksana_23\GovorukhaOksana_23.fsproj">
-      <Name>GovorukhaOksana_23</Name>
-      <Project>{09e2eaa3-5b40-43e2-bc46-600588b2cd38}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

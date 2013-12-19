@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GovorukhaOksana_26", "GovorukhaOksana_26\GovorukhaOksana_26.fsproj", "{3744D247-EED9-4E20-94A9-EFBA74AE2238}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GovorukhaOksana_46", "GovorukhaOksana_46\GovorukhaOksana_46.fsproj", "{B4937BD8-E4E0-4E6F-A8FD-FE32E516E762}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GovorukhaOksana_25", "..\GovorukhaOksana_25\GovorukhaOksana_25\GovorukhaOksana_25.fsproj", "{BC656A96-75DB-4E69-9692-720AEE3D578C}"
 EndProject
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3744D247-EED9-4E20-94A9-EFBA74AE2238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3744D247-EED9-4E20-94A9-EFBA74AE2238}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3744D247-EED9-4E20-94A9-EFBA74AE2238}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3744D247-EED9-4E20-94A9-EFBA74AE2238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4937BD8-E4E0-4E6F-A8FD-FE32E516E762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4937BD8-E4E0-4E6F-A8FD-FE32E516E762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4937BD8-E4E0-4E6F-A8FD-FE32E516E762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4937BD8-E4E0-4E6F-A8FD-FE32E516E762}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC656A96-75DB-4E69-9692-720AEE3D578C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC656A96-75DB-4E69-9692-720AEE3D578C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC656A96-75DB-4E69-9692-720AEE3D578C}.Release|Any CPU.ActiveCfg = Release|Any CPU
