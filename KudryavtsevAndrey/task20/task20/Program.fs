@@ -5,7 +5,7 @@ let rec mainFilter (lst: int List) (arr: int array) =
     | hd :: tl ->
         let a = ref 0
         let i = ref 0 
-        while (!a = 0 && !i < arr.Length) do
+        while !a = 0 && !i < arr.Length do
             if hd = arr.[!i] 
             then a := 1
             else i := !i + 1         
