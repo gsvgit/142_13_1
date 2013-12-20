@@ -48,6 +48,13 @@
     <Compile Include="Program2.fs" />
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GovorukhaOksana_23\GovorukhaOksana_23\GovorukhaOksana_23.fsproj">
+      <Name>GovorukhaOksana_23</Name>
+      <Project>{09e2eaa3-5b40-43e2-bc46-600588b2cd38}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>

@@ -1,8 +1,4 @@
-﻿
-
-type myList = 
-    | Lst of int * myList
-    | Empty
+﻿open typeList
 
 let f (list: myList) = 
     let l = ref 0

@@ -1,4 +1,5 @@
-﻿let mainFilter (lst: List<int>) (arr: array<int>) = 
+﻿
+let mainFilter (lst: List<int>) (arr: array<int>) = 
     if arr = [||] 
     then lst
     else    
@@ -6,13 +7,13 @@
             if hd <> arr.[i] 
             then 
                 if i = arr.Length - 1
-                   then true
+                then true
                 else main hd arr (i + 1) 
             else false
      
         let rec main2 (lst: List<int>) (arr: array<int>) =            
             match lst with
-            | hd::tl -> 
+            | hd :: tl -> 
                         if main hd arr 0 
                         then hd :: main2 tl arr
                         else main2 tl arr
