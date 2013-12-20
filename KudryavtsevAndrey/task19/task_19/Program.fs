@@ -7,7 +7,7 @@ let main (f: float) =
     let b = 1uy    
     for i in 0..arrByte.Length - 1 do
         for j in 0..7 do
-            printf "%A" (int ((arrByte.[i] >>> j) &&& b))                      
+            printf "%A" (int (arrByte.[i] >>> j &&& b))                      
 
     printfn ""
 main (23.855)
