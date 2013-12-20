@@ -3,7 +3,7 @@ let mainSum (arr1 : int array) (arr2 : int array) =
     let res = ref 0
     for i in arr1 do
         let n = 
-            if i >=0 && i < Array.length arr2
+            if i >= 0 && i < Array.length arr2
             then i 
             else arr2.Length - 1
         for j in 0..n do
