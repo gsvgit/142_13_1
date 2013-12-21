@@ -69,3 +69,4 @@ let main (list1:List<_>) (list2:List<_>) =
 
 printfn "res = %A" (main [1; 9; 9; 9] [1; 0])
 printfn "res = %A" (main [1; 1; 2; 3] [-1; 1; 1; 1])  
+printfn "res = %A" (main [1; 9] [-1; 1])
