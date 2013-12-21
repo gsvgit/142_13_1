@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b4937bd8-e4e0-4e6f-a8fd-fe32e516e762</ProjectGuid>
+    <ProjectGuid>9bde08f8-261a-4d23-9b0a-336ba76010b7</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GovorukhaOksana_46</RootNamespace>
-    <AssemblyName>GovorukhaOksana_46</AssemblyName>
+    <RootNamespace>GovorukhaOksana_27</RootNamespace>
+    <AssemblyName>GovorukhaOksana_27</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>GovorukhaOksana_46</Name>
+    <Name>GovorukhaOksana_27</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\GovorukhaOksana_46.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\GovorukhaOksana_27.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\GovorukhaOksana_46.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\GovorukhaOksana_27.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -47,23 +47,6 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\GovorukhaOksana_23\GovorukhaOksana_23\GovorukhaOksana_23.fsproj">
-      <Name>GovorukhaOksana_23</Name>
-      <Project>{09e2eaa3-5b40-43e2-bc46-600588b2cd38}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\GovorukhaOksana_25\GovorukhaOksana_25\GovorukhaOksana_25.fsproj">
-      <Name>GovorukhaOksana_25</Name>
-      <Project>{bc656a96-75db-4e69-9692-720aee3d578c}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\GovorukhaOksana_27\GovorukhaOksana_27\GovorukhaOksana_27.fsproj">
-      <Name>GovorukhaOksana_27</Name>
-      <Project>{9bde08f8-261a-4d23-9b0a-336ba76010b7}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

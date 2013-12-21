@@ -1,12 +1,6 @@
 ﻿open Hash 
-
-type Tree =
-    | Node of string * list<Tree>
-    | Leaf of string
-
-type myList = 
-    | Lst of int * myList
-    | Empty
+open Trees
+open typeList
 
 let main (tr: Tree) = 
     let n = ref 0
