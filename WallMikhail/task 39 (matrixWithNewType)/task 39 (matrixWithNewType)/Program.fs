@@ -1,4 +1,4 @@
-﻿open MyT
+open MyT
 open Addit
 open Multi
 
@@ -9,10 +9,10 @@ let findTl lst =
 
 type Long =
     | Num of List
-    static member (++) ((l1:Long), (l2:Long)) =
+    static member (++) (l1, l2) =
         match l1, l2 with
         | Num lst1, Num lst2 -> Num (Addit.main (Lst (1, lst1)) (Lst (1, lst2)) |> findTl)  
-    static member (+*) ((l1:Long), (l2:Long)) =
+    static member (+*) (l1, l2) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Multi.main (Lst (1, lst1)) (Lst (1, lst2)) |> findTl) 
 
