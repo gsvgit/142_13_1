@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 18", "Task 18\Task 18.fsproj", "{3DD2D4CA-8D23-4C41-9BDC-1A3089A12CB2}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 16", "..\..\..\..\Users\н\142_13_1\VoronkovNikita\Task 16\Task 16\Task 16.fsproj", "{66253789-309F-4E08-810C-0C77E406469B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 16", "..\Task 16\Task 16\Task 16.fsproj", "{66253789-309F-4E08-810C-0C77E406469B}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 17", "..\..\..\..\Users\н\142_13_1\VoronkovNikita\Task 17\Task 17\Task 17.fsproj", "{F33212B8-F960-41A3-BF3B-00364CAF8025}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 17", "..\Task 17\Task 17\Task 17.fsproj", "{F33212B8-F960-41A3-BF3B-00364CAF8025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

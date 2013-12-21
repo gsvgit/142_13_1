@@ -20,9 +20,9 @@ let rec mainRec fibN =
     elif fibN = 1 || fibN = 2
     then Num [1] 
     else mainRec (fibN - 1) ++ mainRec (fibN - 2)
-printfn "Recursive way" 
-printfn "1. %A" (mainRec 100)
-printfn "2. %A" (mainRec 10)
+printfn "Recursive way:" 
+printfn "1. %A" (mainRec 20)
+printfn "2. %A" (mainRec 11)
 
 
 let mainIter fibN =
@@ -35,7 +35,7 @@ let mainIter fibN =
             fibN2 := !fibN1 ++ !fibN2
             fibN1 := !fibN2 -- !fibN1
         !fibN1 
-printfn "Iterative way" 
+printfn "Iterative way:" 
 printfn "1. %A" (mainIter 20)
 printfn "2. %A" (mainIter 11)
 
@@ -52,7 +52,7 @@ let mainRecIt fibN =
                 then fibN1
                 else fib (fibN1 ++ fibN2) fibN1 (i + 1)               
             fib (Num [1]) (Num [1]) 2 
-printfn "Iterative/Recursive way" 
+printfn "Iterative/Recursive way:" 
 printfn "1. %A" (mainRecIt 10)
 printfn "2. %A" (mainRecIt 5)
 
@@ -76,7 +76,7 @@ let mainMatr n =
         fibN.[2]
     else 
         failwith "Error! Wrong index!"
-printfn "Matrix method" 
+printfn "Matrix way:" 
 printfn "1. %A" (mainMatr 10)
 printfn "2. %A" (mainMatr 5)
 
@@ -106,7 +106,7 @@ let mainMatrix n =
                 else multiplicate (fib (n - 1)) matrix 
             let number (fibNn:array<_>) = fibNn.[1]
             number (fib n)
-printfn "Log matrix" 
+printfn "Log matrix:" 
 printfn "1. %A" (mainMatrix 10)
 printfn "2. %A" (mainMatrix 5)
 
@@ -123,6 +123,6 @@ let mainFibNumbers n =
         for i in 2 .. n - 1 do
             fibN.[i] <- fibN.[i - 1] ++ fibN.[i - 2]
         fibN
-printfn "Massive: " 
+printfn "Massive:" 
 printfn "1. %A" (mainFibNumbers 5)
 printfn "2. %A" (mainFibNumbers 10)

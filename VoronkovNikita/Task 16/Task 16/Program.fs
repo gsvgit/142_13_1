@@ -5,9 +5,9 @@ let main (lst1: int list) (lst2: int list) =
     let rec matchLst lst1 lst2 =  
         match lst1, lst2 with
         | [], [] -> false
-        | hd1::tl1, hd2::tl2 ->  hd1 > hd2 || matchLst tl1 tl2
+        | h1 :: t1, h2 :: t2 -> h1 > h2 || matchLst t1 t2
         | _ -> failwith "Incorrect input"                  
-    let help (l1: int list) (l2: int list)  = 
+    let help l1 l2  = 
         List.head l1 = List.head l2 
         || List.head l1 = 1 && List.length l1 > List.length l2
         || List.head l2 = 1 && List.length l2 > List.length l1
@@ -19,10 +19,10 @@ let main (lst1: int list) (lst2: int list) =
     let rec deletingZeroes lst =
         match lst with
         | [] -> [0]
-        | hd :: tl ->
-             if hd = 0
-             then deletingZeroes tl
-             else hd :: tl   
+        | h :: t ->
+             if h = 0
+             then deletingZeroes t
+             else h :: t   
     let rec checkDigit lst =
         match lst with
         | [] -> true
