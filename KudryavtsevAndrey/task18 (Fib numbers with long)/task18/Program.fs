@@ -3,13 +3,13 @@ open Multiplication
 
 type Long =
     | Num of list<int>
-    static member (++) ((l1:Long), (l2:Long)) =
+    static member (++) (l1, l2) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (1 :: lst2) |> List.tail) 
-    static member (--) ((l1:Long), (l2:Long)) =
+    static member (--) (l1, l2) =
         match l1, l2 with
         | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (-1 :: lst2) |> List.tail)  
-    static member (+*) ((l1:Long), (l2:Long)) =
+    static member (+*) (l1, l2) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Multiplication.main (1 :: lst1) (1 :: lst2) |> List.tail)     
 
