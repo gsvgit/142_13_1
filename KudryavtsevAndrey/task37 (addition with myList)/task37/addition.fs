@@ -5,7 +5,7 @@ open listLength
 open AccessoryFunctions 
 
 
-let main (list1: myList) (list2: myList) = 
+let main list1 list2 = 
     
     let rec correctionCheck lst = 
         match lst with
@@ -19,7 +19,7 @@ let main (list1: myList) (list2: myList) =
        lstLength list1 > 1 && lstLength list2 > 1
     then 
     
-        let rec listMatching (lst1: myList) (lst2: myList) = 
+        let rec listMatching lst1 lst2 = 
             if lstLength lst1 > lstLength lst2
             then 1 
             elif lstLength lst1 < lstLength lst2
@@ -36,7 +36,7 @@ let main (list1: myList) (list2: myList) =
                 | Lst (hd1, tl1), Empty -> 1
                 | Empty, Lst (hd2, tl2) -> 2
                     
-        let rec cuttingZeroes (lst: myList) = 
+        let rec cuttingZeroes lst = 
             match lst with 
             | Empty -> Lst (0, Empty) 
             | Lst (hd, tl) -> 
@@ -44,7 +44,7 @@ let main (list1: myList) (list2: myList) =
                 then cuttingZeroes tl 
                 else Lst (hd, tl) 
                 
-        let rec addition (l1: myList) (l2: myList) excess sign1 sign2 = 
+        let rec addition l1 l2 excess sign1 sign2 = 
             match l1, l2 with 
             | Empty, Empty -> Lst (excess, Empty)
             | Lst (hd1, tl1), Lst (hd2, tl2) -> 
@@ -63,7 +63,7 @@ let main (list1: myList) (list2: myList) =
                 then Lst (sum1, (addition tl Empty (sum1 / 10) sign1 sign2)) 
                 else Lst (sum1 + 10, (addition tl Empty -1 sign1 sign2)) 
             
-        let ending (list: myList) = 
+        let ending list = 
            list |> myListReverse |> cuttingZeroes 
 
         let list1Tail = myListTail list1
