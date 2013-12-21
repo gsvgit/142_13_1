@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3dd2d4ca-8d23-4c41-9bdc-1a3089a12cb2</ProjectGuid>
+    <ProjectGuid>862a35ba-ccf5-40d6-9cae-adf646b8d7fb</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_18</RootNamespace>
-    <AssemblyName>Task_18</AssemblyName>
+    <RootNamespace>Task_38</RootNamespace>
+    <AssemblyName>Task_38</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>Task 18</Name>
+    <Name>Task 38</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\Task_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Task_38.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\Task_18.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Task_38.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -49,14 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Task 16\Task 16\Task 16.fsproj">
-      <Name>Task 16</Name>
-      <Project>{66253789-309f-4e08-810c-0c77e406469b}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Task 17\Task 17\Task 17.fsproj">
-      <Name>Task 17</Name>
-      <Project>{f33212b8-f960-41a3-bf3b-00364caf8025}</Project>
+    <ProjectReference Include="C:\Users\н\142_13_1\VoronkovNikita\Task 23\Task 23\Task 23.fsproj">
+      <Name>Task 23</Name>
+      <Project>{0b32716c-bac7-438a-b32a-0206f0614515}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
