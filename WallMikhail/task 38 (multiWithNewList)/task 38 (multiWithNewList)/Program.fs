@@ -2,8 +2,8 @@
 
 open MyT
 
-let main (lst1: MyT.List) (lst2: MyT.List) =    
-    let rec rev (lst: MyT.List) =
+let main lst1 lst2 =    
+    let rec rev lst =
         let rec ret lst =
             match lst with
             | Lst (hd, Empty) -> hd
@@ -18,12 +18,12 @@ let main (lst1: MyT.List) (lst2: MyT.List) =
         | Empty -> Empty
         | Lst (hd, tl) -> Lst (ret lst, rev (cut lst))
 
-    let findHd (x: MyT.List) = 
+    let findHd x  = 
         match x with
         | Lst (hd, tl) -> hd
         | Empty -> 0
 
-    let findTl (x: MyT.List) = 
+    let findTl x = 
         match x with
         | Lst (hd, tl) -> tl
         | Empty -> Empty 
@@ -43,7 +43,7 @@ let main (lst1: MyT.List) (lst2: MyT.List) =
     let rec sum lst1 lst2 s =          
         match lst1, lst2 with   
         | Lst (hd, tl), Lst (0, Empty) -> Lst (hd, tl)  
-        | Lst (0, Empty), Lst(hd, tl) -> Lst (hd, tl)
+        | Lst (0, Empty), Lst (hd, tl) -> Lst (hd, tl)
         | Empty, Empty -> 
             if s = 1
             then Lst (1, Empty)
@@ -51,12 +51,12 @@ let main (lst1: MyT.List) (lst2: MyT.List) =
         | Lst (hd1, Empty), Lst (hd2, Empty) -> 
             let hdSum = hd1 + hd2 + s 
             if hdSum >= 10 
-            then Lst (hdSum - 10, Lst(1, Empty))            
+            then Lst (hdSum - 10, Lst (1, Empty))            
             else Lst (hdSum,  Empty) 
         |  Lst (hd, tl), Empty ->
             let hs = hd + s
             if hs > 9
-            then Lst ((hs - 10), sum tl Empty 1)
+            then Lst (hs - 10, sum tl Empty 1)
             else Lst (hs, tl)
         | Empty, Lst (hd, tl) ->    
             let hs = hd + s
