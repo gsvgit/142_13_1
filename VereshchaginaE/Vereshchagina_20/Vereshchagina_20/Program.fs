@@ -1,21 +1,21 @@
 ﻿let mainFilter (lst1 : List<int>) (arr1 : array<int>) =
     let rec search i x =
-            if  (x <> arr1.[i]) && (i < arr1.Length) 
-            then
-                if i = arr1.Length - 1
-                then false
-                else search (i + 1) x
-            else true
+        if  (x <> arr1.[i]) && (i < arr1.Length) 
+        then
+            if i = arr1.Length - 1
+            then false
+            else search (i + 1) x
+        else true
     
     let rec filter list = 
         if arr1 = [||]
         then list
         else
             match list with
-            | hd::tl ->  
+            | hd :: tl ->  
                 if search 0 hd
                     then filter tl 
-                    else hd::filter tl 
+                    else hd :: filter tl 
             | [] -> []     
     
     filter lst1

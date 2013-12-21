@@ -20,11 +20,15 @@ let mainSum arr1 arr2 =
     let rec count (arr1 : array<int>) (arr2 : array<int>) i =
         if i <= arr1.Length - 1 
         then
-            if (arr1.[i] >= 0) && (arr1.[i] < Array.length arr1)
+            if (arr1.[i] >= 0) && (arr1.[i] < Array.length arr2)
             then sum arr2 arr1.[i] + count arr1 arr2 (i + 1) 
             else sum arr2 (arr2.Length - 1) + count arr1 arr2 (i + 1)
         else 0
+    
     count arr1 arr2 0
 
-printfn "%A" (mainSum [|1; 3; 1; 2; 1; 1; 9|] [|10; 20; 30; 40|])
-printfn "%A" (mainSum1 [|1; 3; 1; 2; 1; 1; 9|] [|10; 20; 30; 40|])
+printfn "%A" (mainSum [|1; 3; 1; 2; 1; 1; 9|] [||])
+printfn "%A" (mainSum1 [|1; 3; 1; 2; 1; 1; 9|] [||])
+
+printfn "%A" (mainSum [|1; 3; 1; 2; 1; 1; 9|] [|10; 11; 12|])
+printfn "%A" (mainSum1 [|1; 3; 1; 2; 1; 1; 9|] [|10; 11; 12|])
