@@ -9,10 +9,12 @@ let func x =
     let rec main t = 
         match t with
         | Node (s, list) -> 
-            a := !a + 1
             for i in 0..List.length list - 1 do main list.[i]
-        | Leaf s ->  
             a := !a
+            
+        | Leaf s ->  
+            a := !a + 1
+            
     main x
     printfn "We have %A Nodes" !a
 
