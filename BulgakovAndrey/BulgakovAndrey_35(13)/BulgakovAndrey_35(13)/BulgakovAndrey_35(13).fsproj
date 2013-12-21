@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>bedc831b-cfb3-48a6-8e7b-fb088b07ebdb</ProjectGuid>
+    <ProjectGuid>31fd5db7-5c7f-4190-9a98-d15fe4957dbd</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BulgakovAndrey_15</RootNamespace>
-    <AssemblyName>BulgakovAndrey_15</AssemblyName>
+    <RootNamespace>BulgakovAndrey_35_13_</RootNamespace>
+    <AssemblyName>BulgakovAndrey_35_13_</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>BulgakovAndrey_15</Name>
+    <Name>BulgakovAndrey_35(13)</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\BulgakovAndrey_15.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BulgakovAndrey_35_13_.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,27 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\BulgakovAndrey_15.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\BulgakovAndrey_35_13_.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="FSharp.Charting">
-      <HintPath>..\..\..\..\..\Users\Андрей\Documents\Visual Studio 2013\Projects\BulgakovAndrey_35(13)\packages\FSharp.Charting.0.90.5\lib\net40\FSharp.Charting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Program.fs" />
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -71,6 +53,36 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Charting">
+      <HintPath>..\packages\FSharp.Charting.0.90.5\lib\net40\FSharp.Charting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\..\..\..\..\..\..\F#_projects\142_13_1\BulgakovAndrey\BulgakovAndrey_14\BulgakovAndrey_14\BulgakovAndrey_14.fsproj">
+      <Name>BulgakovAndrey_14</Name>
+      <Project>{8d45a56a-4bc7-4620-8b9b-5366c47dd2a1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\F#_projects\142_13_1\BulgakovAndrey\BulgakovAndrey_15\BulgakovAndrey_15\BulgakovAndrey_15.fsproj">
+      <Name>BulgakovAndrey_15</Name>
+      <Project>{bedc831b-cfb3-48a6-8e7b-fb088b07ebdb}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

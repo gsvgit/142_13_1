@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>bedc831b-cfb3-48a6-8e7b-fb088b07ebdb</ProjectGuid>
+    <ProjectGuid>471d5836-0ef3-4203-ac08-dea63bdb6da3</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BulgakovAndrey_15</RootNamespace>
-    <AssemblyName>BulgakovAndrey_15</AssemblyName>
+    <RootNamespace>BulgakovAndrey_37_16_</RootNamespace>
+    <AssemblyName>BulgakovAndrey_37_16_</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>BulgakovAndrey_15</Name>
+    <Name>BulgakovAndrey_37(16)</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\BulgakovAndrey_15.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BulgakovAndrey_37_16_.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,14 +34,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\BulgakovAndrey_15.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\BulgakovAndrey_37_16_.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Charting">
-      <HintPath>..\..\..\..\..\Users\Андрей\Documents\Visual Studio 2013\Projects\BulgakovAndrey_35(13)\packages\FSharp.Charting.0.90.5\lib\net40\FSharp.Charting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
@@ -53,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
