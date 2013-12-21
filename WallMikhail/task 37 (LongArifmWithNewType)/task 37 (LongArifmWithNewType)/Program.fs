@@ -3,9 +3,9 @@
 open MyT
 open Length
 
-let main (lst1: MyT.List) (lst2: MyT.List) =    
+let main lst1 lst2 =    
 
-    let rec rev (lst: MyT.List) =
+    let rec rev lst =
 
         let rec ret lst =
             match lst with 
@@ -23,12 +23,12 @@ let main (lst1: MyT.List) (lst2: MyT.List) =
         | Empty -> Empty
         | Lst (hd, tl) -> Lst (ret lst, rev (cut lst))
 
-    let findHd (x: MyT.List) =
+    let findHd x =
         match x with 
         | Lst (hd, tl) -> hd
         | Empty -> 0
 
-    let findTl (x: MyT.List) =
+    let findTl x =
         match x with 
         | Lst (hd, tl) -> tl
         | Empty -> Empty
