@@ -45,7 +45,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="task37.fs" />
+    <Compile Include="addition.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
