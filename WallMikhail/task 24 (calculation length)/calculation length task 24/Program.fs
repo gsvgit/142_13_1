@@ -9,3 +9,4 @@ let rec lstLength lst =
 
 printfn "%A" (lstLength (Lst (124, Lst (24, Empty))))
 printfn "%A" (lstLength (Empty))
+printfn "%A" (Lst(25, Lst(25, Lst(24, Empty))))
