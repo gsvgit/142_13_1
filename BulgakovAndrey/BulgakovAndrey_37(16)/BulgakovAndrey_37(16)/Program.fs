@@ -1,7 +1,5 @@
-﻿type MyList =
-    | Lst of int * MyList
-    | Empty
-
+﻿module MAddition
+open TypeList
 let rev mlst =
     let rec get lst=
         match lst with

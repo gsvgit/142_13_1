@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_38(17)", "BulgakovAndrey_38(17)\BulgakovAndrey_38(17).fsproj", "{9D589B40-0067-4564-AF73-7F8706BA4824}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_39(18)", "BulgakovAndrey_39(18)\BulgakovAndrey_39(18).fsproj", "{5D281A8A-7643-444F-B0E0-58B6E9164787}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_37(16)", "..\BulgakovAndrey_37(16)\BulgakovAndrey_37(16)\BulgakovAndrey_37(16).fsproj", "{471D5836-0EF3-4203-AC08-DEA63BDB6DA3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_38(17)", "..\BulgakovAndrey_38(17)\BulgakovAndrey_38(17)\BulgakovAndrey_38(17).fsproj", "{9D589B40-0067-4564-AF73-7F8706BA4824}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BulgakovAndrey_23", "..\BulgakovAndrey_23\BulgakovAndrey_23\BulgakovAndrey_23.fsproj", "{B03179AE-FF66-4E99-BA13-BAFEBA8802A5}"
 EndProject
@@ -13,6 +17,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D281A8A-7643-444F-B0E0-58B6E9164787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D281A8A-7643-444F-B0E0-58B6E9164787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D281A8A-7643-444F-B0E0-58B6E9164787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D281A8A-7643-444F-B0E0-58B6E9164787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471D5836-0EF3-4203-AC08-DEA63BDB6DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471D5836-0EF3-4203-AC08-DEA63BDB6DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471D5836-0EF3-4203-AC08-DEA63BDB6DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471D5836-0EF3-4203-AC08-DEA63BDB6DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D589B40-0067-4564-AF73-7F8706BA4824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D589B40-0067-4564-AF73-7F8706BA4824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D589B40-0067-4564-AF73-7F8706BA4824}.Release|Any CPU.ActiveCfg = Release|Any CPU
