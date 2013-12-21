@@ -32,7 +32,7 @@ let f list =
         match list with 
         | Lst (int, Lst (int2, myList)) ->  
                 i := !i - 1
-                Lst(array.[!i], f3 (Lst (int2, myList)))
+                Lst (array.[!i], f3 (Lst (int2, myList)))
         | Empty -> Empty
         | _ ->  
             i := !i - 1
@@ -41,8 +41,9 @@ let f list =
     f3 list
 
     
-f (Lst(0, Lst(1, Empty))) |> printfn "%A"
-f (Lst(1, Empty)) |> printfn "%A"
+f (Lst (0, Lst(1, Empty))) |> printfn "%A"
+f (Lst (2, Lst (3, Lst (5, Empty)))) |> printfn "%A"
+f (Lst (1, Empty)) |> printfn "%A"
 f (Empty) |> printfn "%A"
 
         
