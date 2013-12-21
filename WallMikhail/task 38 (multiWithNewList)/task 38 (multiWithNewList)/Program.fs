@@ -61,7 +61,7 @@ let main lst1 lst2 =
         | Empty, Lst (hd, tl) ->    
             let hs = hd + s
             if hs > 9
-            then Lst ((hs - 10), sum Empty tl 1)
+            then Lst (hs - 10, sum Empty tl 1)
             else Lst (hs, tl)                             
         | Lst (hd1, tl1), Lst (hd2, tl2) -> 
             let hdSum = hd1 + hd2 + s  
