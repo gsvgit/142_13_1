@@ -62,10 +62,10 @@ let main (list1:List<_>) (list2:List<_>) =
             |hd1 :: tl1 ->
                 addition (multiplication hd1 list1 0 disch) (multi list1 tl1 (disch + 1) ) 0 1 1 
 
-        if List.head list1 = List.head list1
+        if List.head list1 = List.head list2
         then 1 :: (multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> deletingZeroes)
         else -1 :: (multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> deletingZeroes)
 
 
 printfn "res = %A" (main [1; 9; 9; 9] [1; 0])
-printfn "res = %A" (main [-1; 1; 2; 3] [-1; 1; 1; 1])  
+printfn "res = %A" (main [1; 1; 2; 3] [-1; 1; 1; 1])  
