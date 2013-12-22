@@ -100,7 +100,7 @@ let main lst1 lst2 =
     if checkDigit lst1 && checkDigit lst2
     then
         if checkPosSign && findHd lst1 = -1 && findHd lst2 = -1
-        then Lst (-1, (sum lst1Rev lst2Rev 0 1 1 |> rev |> cutNull))
+        then Lst (-1, (sum lst1Rev lst2Rev 0 1 1) |> rev |> cutNull)
         elif checkPosSign && findHd lst1 = 1 && findHd lst2 = -1 
              || checkPosSign && findHd lst1 = -1 && findHd lst2 = 1
         then Lst (1, (sum lst1Rev lst2Rev 0 (findHd lst1) (findHd lst2)) |> rev |> cutNull)               
