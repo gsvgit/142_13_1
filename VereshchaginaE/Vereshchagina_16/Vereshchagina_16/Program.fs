@@ -1,4 +1,5 @@
-﻿let main (lst : List<_>) (lst2 : List<_>) =
+﻿module Addition
+let main lst lst2 =
     
     let rec addition l l2 n=
         match l, l2 with
