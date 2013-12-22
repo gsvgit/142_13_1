@@ -2,20 +2,20 @@
 open Multi
 open myType
 
-let myListTail (lst: myList) = 
+let myListTail lst = 
     match lst with 
     | Lst (hd, tl) -> tl 
     | Empty -> Empty
 
 type Long =
     | Num of myList
-    static member (++) ((l1:Long), (l2:Long)) =
+    static member (++) ((l1), (l2)) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Add.main (Lst (1, lst1)) (Lst (1, lst2)) |> myListTail) 
-    static member (--) ((l1:Long), (l2:Long)) =
+    static member (--) ((l1), (l2)) =
         match l1, l2 with
         | Num lst1, Num lst2 -> Num (Add.main (Lst (1, lst1)) (Lst (-1, lst2)) |> myListTail)  
-    static member (+*) ((l1:Long), (l2:Long)) =
+    static member (+*) ((l1), (l2)) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Multi.main (Lst (1, lst1)) (Lst (1, lst2)) |> myListTail)     
 
