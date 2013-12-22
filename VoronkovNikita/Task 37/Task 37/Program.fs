@@ -108,11 +108,11 @@ let main (lst1: List) (lst2: List) =
              || res && findingHead lst1 = -1 && findingHead lst2 = 1
         then Lst (1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 (findingHead lst1) (findingHead lst2))))            
         elif findingHead lst1 = 1 && findingHead lst2 = -1  || findingHead lst1 = -1 && findingHead lst2 = 1            
-        then Lst (-1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 (findingHead lst1) (findingHead lst2))))                
+        then Lst (-1, deletingZeroes (reverse (sum lst2Rev lst1Rev 0 (findingHead lst1) (findingHead lst2))))                
         else Lst (1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 1 1)))
     else failwith "Error! Digit must be from 0 to 9!"      
 
 main (Lst(1, Lst(9, Lst(9, Lst(9, Lst(9, Empty)))))) (Lst (1, Lst(1, Empty))) |> printfn "%A"     
 main (Lst(-1, Lst(1, Lst(2, Lst(3, Lst(4, Lst(5, Empty))))))) (Lst (1, Lst(5, Lst(4, Lst(3, Lst(2, Lst(1, Empty))))))) |> printfn "%A"
 main (Lst (1, Lst(9, Empty))) (Lst (1, Lst(1, Lst(6, Empty)))) |> printfn "%A"
-main (Lst (-1, Lst(1, Lst (8, Empty)))) (Lst (-1, Lst (8, Empty))) |> printfn "%A"
+main (Lst (1, Lst(8, Empty))) (Lst (-1, Lst (9, Empty))) |> printfn "%A"

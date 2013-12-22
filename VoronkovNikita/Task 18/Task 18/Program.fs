@@ -3,14 +3,14 @@ open Mult
 
 type Long =
     | Num of list<int>
-    static member (++) ((l1:Long), (l2:Long)) =
-        match l1,l2 with
+    static member (++) (l1, l2) =
+        match l1, l2 with
         | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (1 :: lst2) |> List.tail) 
-    static member (--) ((l1:Long), (l2:Long)) =
+    static member (--) (l1, l2) =
         match l1, l2 with
         | Num lst1, Num lst2 -> Num (Addition.main (1 :: lst1) (-1 :: lst2) |> List.tail)  
-    static member (+*) ((l1:Long), (l2:Long)) =
-        match l1,l2 with
+    static member (+*) (l1, l2) =
+        match l1, l2 with
         | Num lst1, Num lst2 -> Num (Mult.multiplication (1 :: lst1) (1 :: lst2) |> List.tail)     
 
 
@@ -104,7 +104,7 @@ let mainMatrix n =
                     let matrixEven = fib (n / 2)
                     multiplicate matrixEven matrixEven
                 else multiplicate (fib (n - 1)) matrix 
-            let number (fibNn:array<_>) = fibNn.[1]
+            let number (fibNn: array<_>) = fibNn.[1]
             number (fib n)
 printfn "Log matrix:" 
 printfn "1. %A" (mainMatrix 10)
