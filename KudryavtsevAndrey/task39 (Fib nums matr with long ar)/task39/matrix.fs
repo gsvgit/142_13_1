@@ -9,13 +9,13 @@ let myListTail lst =
 
 type Long =
     | Num of myList
-    static member (++) ((l1), (l2)) =
+    static member (++) (l1, l2) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Add.main (Lst (1, lst1)) (Lst (1, lst2)) |> myListTail) 
-    static member (--) ((l1), (l2)) =
+    static member (--) (l1, l2) =
         match l1, l2 with
         | Num lst1, Num lst2 -> Num (Add.main (Lst (1, lst1)) (Lst (-1, lst2)) |> myListTail)  
-    static member (+*) ((l1), (l2)) =
+    static member (+*) (l1, l2) =
         match l1,l2 with
         | Num lst1, Num lst2 -> Num (Multi.main (Lst (1, lst1)) (Lst (1, lst2)) |> myListTail)     
 

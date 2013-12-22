@@ -53,7 +53,7 @@ let main list1 list2 =
                 then Lst ((sum % 10), (addition tl1 tl2 (sum / 10) sign1 sign2)) 
                 elif sum <= 9 && sum >= 0 
                 then Lst (sum, (addition tl1 tl2 (sum / 10) sign1 sign2))
-                else Lst ((sum + 10), (addition tl1 tl2 -1 sign1 sign2))
+                else Lst (sum + 10, (addition tl1 tl2 -1 sign1 sign2))
             | Empty, Lst (hd, tl) 
             | Lst (hd, tl), Empty -> 
                 let sum1 = hd * sign1 + excess 
