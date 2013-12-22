@@ -19,7 +19,7 @@ let info (x: Tree) =
            else count := !count 
    odd x
    !count 
-printfn "%A" (info (Node ("abcde", [Leaf "fgh"; Leaf "ij"; Node ("klmno", [Leaf "pq"; Leaf "rstuvwxyz"])])))
+printfn "%A" (info (Node ("abcdeпр", [Leaf "fgh"; Leaf "ij"; Node ("klmno", [Leaf "pq"; Leaf "rstuvwxyz"])])))
 printfn "%A" (info (Leaf ""))
 
 
