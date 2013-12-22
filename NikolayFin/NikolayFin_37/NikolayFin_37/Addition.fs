@@ -84,4 +84,3 @@ printfn "4. = %A" (main (Lst (1, Lst (3, Lst (4, Lst (5, Empty))))) (Lst (-1, Ls
 printfn "5. = %A" (main (Lst (-1, Lst (3, Lst (4, Lst (5, Empty))))) (Lst (1, Lst (2, Lst (3, Lst (4, Lst (5, Empty)))))))
 printfn "6. = %A" (main (Lst (-1, Lst (2, Lst (3, Lst (4, Lst (5, Empty)))))) (Lst (1, Lst (3, Lst (4, Lst (5, Empty))))))
 printfn "7. = %A" (main (Lst (-1, Lst (2, Lst (3, Lst (4, Lst (5, Empty)))))) (Lst (-1, Lst (2, Lst (3, Lst (4, Lst (5, Empty)))))))
-printfn "8. = %A" (main (Lst (1, Lst (1,Empty)))  (Lst (1, Lst (0,Empty))))
