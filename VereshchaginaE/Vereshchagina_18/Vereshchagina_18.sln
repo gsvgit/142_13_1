@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Vereshchagina_18", "Vereshchagina_18\Vereshchagina_18.fsproj", "{74124298-171C-4517-8B1E-DBA1C5980879}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Vereshchagina_16", "..\Vereshchagina_16\Vereshchagina_16\Vereshchagina_16.fsproj", "{F9443795-34A7-461B-BCEE-679794F88AB7}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Vereshchagina_17", "..\Vereshchagina_17\Vereshchagina_17\Vereshchagina_17.fsproj", "{13BC3846-BC35-4E36-A850-5B486959E241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74124298-171C-4517-8B1E-DBA1C5980879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74124298-171C-4517-8B1E-DBA1C5980879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74124298-171C-4517-8B1E-DBA1C5980879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74124298-171C-4517-8B1E-DBA1C5980879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9443795-34A7-461B-BCEE-679794F88AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9443795-34A7-461B-BCEE-679794F88AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9443795-34A7-461B-BCEE-679794F88AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9443795-34A7-461B-BCEE-679794F88AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BC3846-BC35-4E36-A850-5B486959E241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BC3846-BC35-4E36-A850-5B486959E241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BC3846-BC35-4E36-A850-5B486959E241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BC3846-BC35-4E36-A850-5B486959E241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

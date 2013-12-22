@@ -2,9 +2,9 @@
 
 open myType
 
-let main (lst1: List) (lst2: List) = 
+let main lst1 lst2 = 
     
-    let rec reverse (lst: List) =
+    let rec reverse lst =
         let rec returnLast lst =
             match lst with
             | Lst (h, Empty) -> h
@@ -19,15 +19,22 @@ let main (lst1: List) (lst2: List) =
         | Empty -> Empty
         | Lst (h, t) -> Lst (returnLast lst, reverse (cut lst))
     
-    let findingTail (x: List) = 
+    let findingTail x = 
         match x with
         | Lst (h, t) -> t
         | Empty -> Empty 
     
-    let findingHead (x: List) = 
+    let findingHead x = 
         match x with
         | Lst (h, t) -> h
         | Empty -> 0
+
+    let check lt = 
+        if lt = Lst (1, Lst (0, Empty)) ||
+           lt = Lst (-1, Lst (0, Empty)) ||
+           lt = Lst (0, Empty)
+        then false
+        else true
 
     let rec checkDigit lt = 
         match lt with
@@ -49,6 +56,10 @@ let main (lst1: List) (lst2: List) =
     elif checkDigit (findingTail lst1) = 10 ||
          checkDigit (findingTail lst2) = 10
     then failwith "Error! You entered wrong digit. Digit must be from 0 to 9."
+
+    elif check lst1 = false ||
+         check lst2 = false
+    then Lst (0, Empty)
 
     else
         let lst1Rev = reverse (findingTail lst1)
@@ -104,6 +115,7 @@ let main (lst1: List) (lst2: List) =
         Lst (findingHead lst1 * findingHead lst2, reverse (listsMult lst1Rev lst2Rev 0))
 
 main (Lst (1, Lst (2, Lst (3, Empty)))) (Lst (1, Lst (2, Lst (3, Empty)))) |> printfn "%A"
-main (Lst (1, Lst (9, Empty))) (Lst (-1, Lst (2, Lst (3, Lst (3, Empty))))) |> printfn "%A"
+main (Lst (1, Lst (3, Lst (2, Lst (1, Empty))))) (Lst (1, Lst (1, Lst (2, Lst (3, Empty))))) |> printfn "%A"
+main (Lst (-1, Lst (9, Lst (9, Empty)))) (Lst (-1, Lst (0, Empty))) |> printfn "%A"
 main (Lst (1, Lst (2, Empty))) Empty |> printfn "%A"
 

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c72ccc86-929c-4c41-864f-0cff32aae7f4</ProjectGuid>
+    <ProjectGuid>e9876cb4-f8b7-4c06-8a5b-743caa6caacd</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>NikolayFin_23</RootNamespace>
     <AssemblyName>NikolayFin_23</AssemblyName>

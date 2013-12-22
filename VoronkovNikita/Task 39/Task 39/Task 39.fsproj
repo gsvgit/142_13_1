@@ -49,17 +49,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\н\142_13_1\VoronkovNikita\Task 23\Task 23\Task 23.fsproj">
+    <ProjectReference Include="..\..\Task 23\Task 23\Task 23.fsproj">
       <Name>Task 23</Name>
       <Project>{0b32716c-bac7-438a-b32a-0206f0614515}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\н\142_13_1\VoronkovNikita\Task 37\Task 37\Task 37.fsproj">
+    <ProjectReference Include="..\..\Task 37\Task 37\Task 37.fsproj">
       <Name>Task 37</Name>
       <Project>{1c4a50ef-acbd-4c88-b40c-7d92fb2b2bd6}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\н\142_13_1\VoronkovNikita\Task 38\Task 38\Task 38.fsproj">
+    <ProjectReference Include="..\..\Task 38\Task 38\Task 38.fsproj">
       <Name>Task 38</Name>
       <Project>{862a35ba-ccf5-40d6-9cae-adf646b8d7fb}</Project>
       <Private>True</Private>

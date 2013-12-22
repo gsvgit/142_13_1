@@ -43,11 +43,11 @@ let main lst1 lst2 =
         findHd l1 = findHd l2 
         || findHd l1 = 1 && Length.lstLength l1 > Length.lstLength l2
         || findHd l2 = 1 && Length.lstLength l2 > Length.lstLength l1
-        ||  if Length.lstLength l1 = Length.lstLength l2 && findHd l1 = 1
-            then matchLst (findTl l1) (findTl l2)
-            elif Length.lstLength l1 = Length.lstLength l2 && findHd l2 = 1
-            then matchLst (findTl l2) (findTl l1)
-            else false
+        || if Length.lstLength l1 = Length.lstLength l2 && findHd l1 = 1
+           then matchLst (findTl l1) (findTl l2)
+           elif Length.lstLength l1 = Length.lstLength l2 && findHd l2 = 1
+           then matchLst (findTl l2) (findTl l1)
+           else false
            
     let rec cutNull lst =
         match lst with
@@ -73,19 +73,19 @@ let main lst1 lst2 =
             then Lst (1, Empty)
             else Empty                        
         | Lst (hd1, tl1), Empty -> 
-            let hd1s = hd1 * z + z 
+            let hd1s = hd1 * x + z 
             if hd1s > 9 
             then Lst (hd1s - 10, sum tl1 Empty 1 x c)
             elif hd1s < 0 
             then Lst (hd1s + 10, sum tl1 Empty -1 x c)
-            else Lst (hd1, tl1)      
+            else Lst (hd1s, tl1)      
         | Empty, Lst (hd2, tl2) -> 
-            let hd2s = hd2 * x + z
+            let hd2s = hd2 * c + z
             if hd2s > 9 
             then Lst (hd2s - 10, sum tl2 Empty 1 x c)
             elif hd2s < 0 
             then Lst (hd2s + 10, sum tl2 Empty -1 x c)
-            else Lst (hd2, tl2)         
+            else Lst (hd2s, tl2)         
         | Lst (hd1, tl1), Lst (hd2, tl2) -> 
             let hdSum = hd1 * x + hd2 * c + z  
             if hdSum >= 10  
@@ -93,23 +93,24 @@ let main lst1 lst2 =
             elif hdSum < 0 
             then Lst (hdSum + 10, sum tl1 tl2 -1 x c)                                
             else Lst (hdSum, sum tl1 tl2 0 x c)    
-            
+        
     let lst1Rev = rev (findTl lst1)
     let lst2Rev = rev (findTl lst2)
-                      
+    
     if checkDigit lst1 && checkDigit lst2
     then
         if checkPosSign && findHd lst1 = -1 && findHd lst2 = -1
-        then Lst (-1, cutNull (rev (sum lst1Rev lst2Rev 0 1 1)))
+        then Lst (-1, (sum lst1Rev lst2Rev 0 1 1) |> rev |> cutNull)
         elif checkPosSign && findHd lst1 = 1 && findHd lst2 = -1 
              || checkPosSign && findHd lst1 = -1 && findHd lst2 = 1
-        then Lst (1, cutNull (rev (sum lst1Rev lst2Rev 0 (findHd lst1) (findHd lst2))))        
+        then Lst (1, (sum lst1Rev lst2Rev 0 (findHd lst1) (findHd lst2)) |> rev |> cutNull)               
         elif findHd lst1 = 1 && findHd lst2 = -1  || findHd lst1 = -1 && findHd lst2 = 1            
-        then Lst (-1, cutNull (rev (sum lst1Rev lst2Rev 0 (findHd lst1) (findHd lst2))))          
-        else Lst (1, cutNull (rev (sum lst1Rev lst2Rev 0 (findHd lst1) (findHd lst2))))
+        then Lst (-1, (sum lst2Rev lst1Rev 0 (findHd lst1) (findHd lst2)) |> rev |> cutNull)                 
+        else Lst (1, (sum lst1Rev lst2Rev 0 1 1) |> rev |> cutNull)
     else failwith "Digit can't be more than 9)"    
     
 main (Lst (1, Lst (8, Lst (8, Lst (1, Empty))))) (Lst (1, Lst (1, Empty))) |> printfn "%A"     
 main (Lst (-1, Lst (2, Lst (2, Lst (2, Empty))))) (Lst (1, Lst (2, Lst (2, Lst (5, Empty))))) |> printfn "%A"
-main (Lst (-1, Lst (5, Empty))) (Lst (-1, Lst (7, Empty))) |> printfn "%A"
-main (Lst (-1, Lst (10, Lst (2, Empty)))) (Lst (1, Lst (1, Empty))) |> printfn "%A"
+main (Lst (1, Lst (5, Empty))) (Lst (-1, Lst (7, Lst (1, Empty)))) |> printfn "%A"
+main (Lst (-1, Lst (1, Lst (2, Empty)))) (Lst (1, Lst (1, Empty))) |> printfn "%A"
+main (Lst (-1, Lst (10, Lst (5, Empty)))) (Lst (1, Lst (7, Empty))) |> printfn "%A"

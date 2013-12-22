@@ -36,4 +36,4 @@ let main n =
     else 
         failwith "Error! Wrong index!"
 
-main 6 |> printfn "%A"
+main 12 |> printfn "%A"

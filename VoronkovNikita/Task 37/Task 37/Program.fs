@@ -3,8 +3,8 @@
 open myType
 open Length
 
-let main (lst1: List) (lst2: List) = 
-    let rec reverse (lst: List) =
+let main lst1 lst2 = 
+    let rec reverse lst =
         let rec returnLast lst =
             match lst with
             | Lst (h, Empty) -> h
@@ -19,12 +19,12 @@ let main (lst1: List) (lst2: List) =
         | Empty -> Empty
         | Lst (h, t) -> Lst (returnLast lst, reverse (cut lst))
     
-    let findingTail (x: List) = 
+    let findingTail x = 
         match x with
         | Lst (h, t) -> t
         | Empty -> Empty 
     
-    let findingHead (x: List) = 
+    let findingHead x = 
         match x with
         | Lst (h, t) -> h
         | Empty -> 0
@@ -72,26 +72,26 @@ let main (lst1: List) (lst2: List) =
             then Lst (1, Empty) 
             else Empty                        
         | Lst (h1, Empty), Lst (h2, Empty) -> 
-            let headSum = h1 * b + h2 * c + a 
-            if headSum >= 10 
-            then Lst (headSum - 10, (Lst (1, Empty)))
-            elif headSum < 0 
-            then Lst (headSum + 10, (Lst (1, Empty)))
-            else Lst (headSum, Empty)
+            let hd = h1 * b + h2 * c + a 
+            if hd >= 10 
+            then Lst (hd - 10, (Lst (1, Empty)))
+            elif hd < 0 
+            then Lst (hd + 10, (Lst (1, Empty)))
+            else Lst (hd, Empty)
         | Lst (h1, t1), Empty -> 
-            let hd1 = h1 * b + a 
-            if hd1 > 9 
-            then Lst (hd1 - 10, sum t1 Empty 1 b c)
-            elif h1 < 0 
-            then Lst (hd1 + 10, sum t1 Empty -1 b c)
-            else Lst (h1, t1)          
+            let hd = h1 * b + a 
+            if hd > 9 
+            then Lst (hd - 10, sum t1 Empty 1 b c)
+            elif hd < 0 
+            then Lst (hd + 10, sum t1 Empty -1 b c)
+            else Lst (hd, t1)          
         | Empty, Lst (h2, t2) -> 
-            let hd2 = h2 * c + a 
-            if h2 > 9 
-            then Lst (hd2 - 10, sum t2 Empty 1 b c)
-            elif h2 < 0 
-            then Lst (hd2 + 10, sum t2 Empty -1 b c)
-            else Lst (hd2, t2)      
+            let hd = h2 * c + a 
+            if hd > 9 
+            then Lst (hd - 10, sum t2 Empty 1 b c)
+            elif hd < 0 
+            then Lst (hd + 10, sum t2 Empty -1 b c)
+            else Lst (hd, t2)      
         | Lst (h1, t1), Lst (h2, t2) -> 
             let headSum = h1 * b + h2 * c + a  
             if headSum >= 10  
@@ -108,11 +108,11 @@ let main (lst1: List) (lst2: List) =
              || res && findingHead lst1 = -1 && findingHead lst2 = 1
         then Lst (1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 (findingHead lst1) (findingHead lst2))))            
         elif findingHead lst1 = 1 && findingHead lst2 = -1  || findingHead lst1 = -1 && findingHead lst2 = 1            
-        then Lst (-1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 (findingHead lst1) (findingHead lst2))))                
+        then Lst (-1, deletingZeroes (reverse (sum lst2Rev lst1Rev 0 (findingHead lst1) (findingHead lst2))))                
         else Lst (1, deletingZeroes (reverse (sum lst1Rev lst2Rev 0 1 1)))
     else failwith "Error! Digit must be from 0 to 9!"      
 
 main (Lst(1, Lst(9, Lst(9, Lst(9, Lst(9, Empty)))))) (Lst (1, Lst(1, Empty))) |> printfn "%A"     
 main (Lst(-1, Lst(1, Lst(2, Lst(3, Lst(4, Lst(5, Empty))))))) (Lst (1, Lst(5, Lst(4, Lst(3, Lst(2, Lst(1, Empty))))))) |> printfn "%A"
 main (Lst (1, Lst(9, Empty))) (Lst (1, Lst(1, Lst(6, Empty)))) |> printfn "%A"
-main (Lst (-1, Lst(10, Lst(4, Empty)))) (Lst (1, Lst(2, Empty))) |> printfn "%A"
+main (Lst (1, Lst(8, Empty))) (Lst (-1, Lst (9, Empty))) |> printfn "%A"
