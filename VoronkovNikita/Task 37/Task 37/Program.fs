@@ -3,8 +3,8 @@
 open myType
 open Length
 
-let main (lst1: List) (lst2: List) = 
-    let rec reverse (lst: List) =
+let main lst1 lst2 = 
+    let rec reverse lst =
         let rec returnLast lst =
             match lst with
             | Lst (h, Empty) -> h
@@ -19,12 +19,12 @@ let main (lst1: List) (lst2: List) =
         | Empty -> Empty
         | Lst (h, t) -> Lst (returnLast lst, reverse (cut lst))
     
-    let findingTail (x: List) = 
+    let findingTail x = 
         match x with
         | Lst (h, t) -> t
         | Empty -> Empty 
     
-    let findingHead (x: List) = 
+    let findingHead x = 
         match x with
         | Lst (h, t) -> h
         | Empty -> 0
