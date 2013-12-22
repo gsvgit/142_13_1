@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>ea0926b1-6427-4edb-8671-e3d6377c3efe</ProjectGuid>
+    <ProjectGuid>44eec497-6cde-4973-8ea9-b15440ad236d</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_39</RootNamespace>
-    <AssemblyName>Task_39</AssemblyName>
+    <RootNamespace>Task_36</RootNamespace>
+    <AssemblyName>Task_36</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>Task 39</Name>
+    <Name>Task 36</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\Task_39.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Task_36.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\Task_39.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Task_36.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -52,16 +52,6 @@
     <ProjectReference Include="..\..\Task 23\Task 23\Task 23.fsproj">
       <Name>Task 23</Name>
       <Project>{0b32716c-bac7-438a-b32a-0206f0614515}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Task 37\Task 37\Task 37.fsproj">
-      <Name>Task 37</Name>
-      <Project>{1c4a50ef-acbd-4c88-b40c-7d92fb2b2bd6}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Task 38\Task 38\Task 38.fsproj">
-      <Name>Task 38</Name>
-      <Project>{862a35ba-ccf5-40d6-9cae-adf646b8d7fb}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

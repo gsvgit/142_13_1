@@ -1,4 +1,6 @@
-﻿open myType
+﻿module Length
+
+open myType
 
 let main lst = 
     let length = ref 0

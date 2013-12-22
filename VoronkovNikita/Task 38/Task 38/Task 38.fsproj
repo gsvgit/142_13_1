@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\н\142_13_1\VoronkovNikita\Task 23\Task 23\Task 23.fsproj">
+    <ProjectReference Include="..\..\Task 23\Task 23\Task 23.fsproj">
       <Name>Task 23</Name>
       <Project>{0b32716c-bac7-438a-b32a-0206f0614515}</Project>
       <Private>True</Private>

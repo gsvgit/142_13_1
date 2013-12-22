@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 37", "Task 37\Task 37.fsproj", "{1C4A50EF-ACBD-4C88-B40C-7D92FB2B2BD6}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 23", "C:\Users\н\142_13_1\VoronkovNikita\Task 23\Task 23\Task 23.fsproj", "{0B32716C-BAC7-438A-B32A-0206F0614515}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 23", "..\Task 23\Task 23\Task 23.fsproj", "{0B32716C-BAC7-438A-B32A-0206F0614515}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Task 24", "..\Task 24\Task 24\Task 24.fsproj", "{B987365F-0559-4B92-8E9C-B0D134AE1285}"
 EndProject

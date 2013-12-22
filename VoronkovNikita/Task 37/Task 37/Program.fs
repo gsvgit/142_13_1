@@ -72,26 +72,26 @@ let main (lst1: List) (lst2: List) =
             then Lst (1, Empty) 
             else Empty                        
         | Lst (h1, Empty), Lst (h2, Empty) -> 
-            let headSum = h1 * b + h2 * c + a 
-            if headSum >= 10 
-            then Lst (headSum - 10, (Lst (1, Empty)))
-            elif headSum < 0 
-            then Lst (headSum + 10, (Lst (1, Empty)))
-            else Lst (headSum, Empty)
+            let hd = h1 * b + h2 * c + a 
+            if hd >= 10 
+            then Lst (hd - 10, (Lst (1, Empty)))
+            elif hd < 0 
+            then Lst (hd + 10, (Lst (1, Empty)))
+            else Lst (hd, Empty)
         | Lst (h1, t1), Empty -> 
-            let hd1 = h1 * b + a 
-            if hd1 > 9 
-            then Lst (hd1 - 10, sum t1 Empty 1 b c)
-            elif h1 < 0 
-            then Lst (hd1 + 10, sum t1 Empty -1 b c)
-            else Lst (h1, t1)          
+            let hd = h1 * b + a 
+            if hd > 9 
+            then Lst (hd - 10, sum t1 Empty 1 b c)
+            elif hd < 0 
+            then Lst (hd + 10, sum t1 Empty -1 b c)
+            else Lst (hd, t1)          
         | Empty, Lst (h2, t2) -> 
-            let hd2 = h2 * c + a 
-            if h2 > 9 
-            then Lst (hd2 - 10, sum t2 Empty 1 b c)
-            elif h2 < 0 
-            then Lst (hd2 + 10, sum t2 Empty -1 b c)
-            else Lst (hd2, t2)      
+            let hd = h2 * c + a 
+            if hd > 9 
+            then Lst (hd - 10, sum t2 Empty 1 b c)
+            elif hd < 0 
+            then Lst (hd + 10, sum t2 Empty -1 b c)
+            else Lst (hd, t2)      
         | Lst (h1, t1), Lst (h2, t2) -> 
             let headSum = h1 * b + h2 * c + a  
             if headSum >= 10  
@@ -115,4 +115,4 @@ let main (lst1: List) (lst2: List) =
 main (Lst(1, Lst(9, Lst(9, Lst(9, Lst(9, Empty)))))) (Lst (1, Lst(1, Empty))) |> printfn "%A"     
 main (Lst(-1, Lst(1, Lst(2, Lst(3, Lst(4, Lst(5, Empty))))))) (Lst (1, Lst(5, Lst(4, Lst(3, Lst(2, Lst(1, Empty))))))) |> printfn "%A"
 main (Lst (1, Lst(9, Empty))) (Lst (1, Lst(1, Lst(6, Empty)))) |> printfn "%A"
-main (Lst (-1, Lst(10, Lst(4, Empty)))) (Lst (1, Lst(2, Empty))) |> printfn "%A"
+main (Lst (-1, Lst(1, Lst (8, Empty)))) (Lst (-1, Lst (8, Empty))) |> printfn "%A"
