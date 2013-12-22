@@ -4,13 +4,13 @@ open TypeList
 
 type Long =
     | Num of MyList
-    static member (++) ((l1:Long), (l2:Long)) = 
+    static member (++) (l1, l2) = 
         match l1, l2 with
         | Num l1, Num l2 -> Num (MAddition.main l1 l2)
-    static member (--) ((l1:Long), (l2:Long)) = 
+    static member (--) (l1, l2) = 
         match l1, l2 with
         | Num l1, Num l2 -> Num (MAddition.main l1 (Lst(((MAddition.head l2) * -1), (MMulti.tail l2))))
-    static member (-*-) ((l1:Long), (l2:Long)) = 
+    static member (-*-) (l1, l2) = 
         match l1, l2 with
         | Num l1, Num l2 -> Num (MMulti.tail (MMulti.main (Lst(1, l1)) (Lst(1, l2))))
 
