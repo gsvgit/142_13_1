@@ -4,14 +4,14 @@ open AccessoryFunctions
 open myType 
 open listLength
 
-let main (list1: myList) (list2: myList) = 
+let main list1 list2 = 
 
     let rec correctionCheck lst = 
         match lst with
         | Empty -> true
         | Lst (h, t) -> h < 10 && correctionCheck t  
 
-    let rec deletingZeroes (lst: myList) = 
+    let rec deletingZeroes lst = 
             match lst with 
             | Empty -> Lst (0, Empty) 
             | Lst (hd, tl) -> 
@@ -34,7 +34,7 @@ let main (list1: myList) (list2: myList) =
     then failwith "Error! Entered incorrect digits, digits must be valued from 0 to 9. "
     else  
                                                                
-        let rec addition (lst1: myList) (lst2: myList) excess sign1 sign2 =
+        let rec addition lst1 lst2 excess sign1 sign2 =
             match lst1, lst2 with
             | Empty, Empty -> 
                 if excess = 0 
@@ -67,7 +67,7 @@ let main (list1: myList) (list2: myList) =
                     then Lst (mult % 10, multiplication hd tl1 (mult / 10) 0)
                     else Lst (mult, multiplication hd tl1 0 0)
 
-        let rec multi (list1: myList) (list2: myList) disch =
+        let rec multi list1 list2 disch =
             match list2 with
             | Empty -> Empty
             | Lst (hd1, tl1) ->
