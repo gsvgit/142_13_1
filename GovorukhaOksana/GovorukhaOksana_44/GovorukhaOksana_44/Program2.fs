@@ -1,4 +1,6 @@
-﻿open typeList
+﻿module reverse
+
+open typeList
 
 let f list = 
     let l = ref 0
