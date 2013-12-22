@@ -28,7 +28,7 @@ let main list1 list2 =
     
     if lstLength list1 < 2 || lstLength list2 < 2 
     then failwith "Error! Entered incorrect numbers. " 
-    elif abs(myListHead list1) <> 1 || abs(myListHead list2) <> 1
+    elif abs (myListHead list1) <> 1 || abs (myListHead list2) <> 1
     then failwith "Error! Entered incorrect sign, sign must be valued 1 or -1. "
     elif not (correctionCheck list1Tail && correctionCheck list2Tail)
     then failwith "Error! Entered incorrect digits, digits must be valued from 0 to 9. "
