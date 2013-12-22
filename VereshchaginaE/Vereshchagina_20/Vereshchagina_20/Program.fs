@@ -12,11 +12,11 @@
         then list
         else
             match list with
-            | hd :: tl ->  
+            |hd :: tl ->  
                 if search 0 hd
-                    then filter tl 
-                    else hd :: filter tl 
-            | [] -> []     
+                then filter tl 
+                else hd :: filter tl 
+            |[] -> []     
     
     filter lst1
 

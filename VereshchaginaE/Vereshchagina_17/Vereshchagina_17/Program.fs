@@ -1,6 +1,8 @@
 ﻿module Multiplication
 
 let main (list1 : List<_>) (list2 : List<_>) = 
+    let head1 = List.head list1
+    let head2 = List.head list2
     let rec delzero list =
         match list with
         |[] -> [0]
@@ -60,13 +62,17 @@ let main (list1 : List<_>) (list2 : List<_>) =
             |hd :: tl ->
                 addition (multiplication hd list1 0 disch) (multi list1 tl (disch + 1) ) 0 1 1 
         
-        if List.head list1 = List.head list1
+        if head1 = head2
         then 1 :: (multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> delzero)
         else -1 :: (multi (List.rev list1.Tail) (List.rev list2.Tail) 0 |> List.rev |> delzero)
 
 printfn "(-864968) * 23 = %A" (main [-1; 8; 6; 4; 9; 6; 8] [1; 2; 3])
 printfn "66 * (-77) = %A" (main [1; 6; 6] [-1; 7; 7])
+printfn "-8 * -6 = %A" (main [-1; 8] [-1; 6])
+printfn "8 * 6 = %A" (main [1; 8] [1; 6])
 printfn "0 * 6 = %A" (main [1; 0] [1; 6])
-printfn "%A" (main [] [])
+
+
+
 
 
