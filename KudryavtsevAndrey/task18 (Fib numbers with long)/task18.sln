@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task18", "task18\task18.fsproj", "{F55116EE-9A96-44F7-8B67-A5AEFF03A91D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task16", "..\task16 (addition lists)\task16\task16.fsproj", "{BD28E67F-E329-4003-8705-729E671FBCE1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "task17", "..\task17 (multiplication lists)\task17\task17.fsproj", "{5AF95FAB-2F04-43D8-907D-2CB9915E87F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F55116EE-9A96-44F7-8B67-A5AEFF03A91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55116EE-9A96-44F7-8B67-A5AEFF03A91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55116EE-9A96-44F7-8B67-A5AEFF03A91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55116EE-9A96-44F7-8B67-A5AEFF03A91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD28E67F-E329-4003-8705-729E671FBCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD28E67F-E329-4003-8705-729E671FBCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD28E67F-E329-4003-8705-729E671FBCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD28E67F-E329-4003-8705-729E671FBCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF95FAB-2F04-43D8-907D-2CB9915E87F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF95FAB-2F04-43D8-907D-2CB9915E87F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF95FAB-2F04-43D8-907D-2CB9915E87F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF95FAB-2F04-43D8-907D-2CB9915E87F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

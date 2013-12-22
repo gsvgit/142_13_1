@@ -1,4 +1,6 @@
-﻿open myType
+﻿module listLength 
+
+open myType
 
 let rec lstLength lst = 
     match lst with 

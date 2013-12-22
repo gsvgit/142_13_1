@@ -79,7 +79,7 @@ let matlog x =
         elif n % 2 = 1
         then step (fib (n - 1)) std
         else 
-            let array = fib (n /2) 
+            let array = fib (n / 2) 
             step array array
       let take (arr3:array<_>) = 
                 arr3.[2]

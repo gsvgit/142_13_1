@@ -1,5 +1,4 @@
-﻿
-open Hash
+﻿open Hash
 
 let rec hashall (lst: List<string>) =
     match lst with
