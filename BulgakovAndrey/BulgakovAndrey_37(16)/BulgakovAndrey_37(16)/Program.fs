@@ -119,16 +119,16 @@ let main lst lst2 =
     let lst2p = poli lst2
     let n = sravn lstp lst2p
     //Negative - Positive 
-    if n=1 && head lst < 0 && head lst2 > 0
+    if n = 1 && head lst < 0 && head lst2 > 0
     then rev (otric (rev (cut (rev (go2 (rev lstp) (rev lst2p) 0)))))
-    elif n=2 && head lst < 0 && head lst2 > 0
+    elif n = 2 && head lst < 0 && head lst2 > 0
     then rev (rev (cut (rev (go2 (rev lst2p) (rev lstp) 0))))
     elif n = 0 && head lst < 0 && head lst2 > 0 
     then rev (rev (cut (rev (go2 (rev lstp) (rev lst2p) 0))))
     //Positive - Negative
-    elif n=1 && head lst > 0 && head lst2 < 0 
+    elif n = 1 && head lst > 0 && head lst2 < 0 
     then rev (rev (cut (rev (go2 (rev lstp) (rev lst2p) 0))))
-    elif n=2 && head lst > 0 && head lst2 < 0 
+    elif n = 2 && head lst > 0 && head lst2 < 0 
     then rev (otric (rev (cut (rev (go2 (rev lst2p) (rev lstp) 0)))))
     elif n = 0 && head lst > 0 && head lst2 < 0 
     then rev (rev (cut (rev (go2 (rev lstp) (rev lst2p) 0))))
