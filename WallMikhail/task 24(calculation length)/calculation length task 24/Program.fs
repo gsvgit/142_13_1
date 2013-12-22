@@ -1,4 +1,6 @@
-﻿open MyT
+﻿module Length
+
+open MyT
 
 let rec lstLength lst = 
     match lst with 

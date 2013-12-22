@@ -4,11 +4,10 @@ let main (f: float) =
     printfn "%A" f
 
     let arrByte = System.BitConverter.GetBytes(f)      
-    let (b: byte) = 1uy    
-    let (arrBit: byte array) = Array.create 8 0uy
+    let b = 1uy    
     for i in 0..arrByte.Length - 1 do
         for j in 0..7 do
-            printf "%A" (int ((arrByte.[i] >>> j) &&& b))                      
+            printf "%A" (int (arrByte.[i] >>> j &&& b))                  
 
     printfn ""
 main (23.855)
