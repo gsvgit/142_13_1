@@ -93,10 +93,12 @@ let main list1 list2 =
 let lst1 = Lst (1, Lst (1, Lst (1, Lst (1, Empty))))
 let lst2 = Lst (1, Lst (2, Lst (2, Lst (3, Empty))))
 let lst3 = Lst (0, Empty) 
+let lst0 = Lst (1, Lst (0, Empty)) 
 let lst4 = Lst (-1, Lst (3, Lst (3, Empty)))
 let lst5 = Lst (-1, Lst (6, Lst (7, Empty)))
 
 printfn "res = %A" (main lst1 lst2) 
 printfn "res = %A" (main lst4 lst5) 
+printfn "res = %A" (main lst0 lst1) 
+printfn "res = %A" (main lst0 lst0) 
 printfn "res = %A" (main lst3 lst4) 
-
