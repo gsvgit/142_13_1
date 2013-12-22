@@ -1,6 +1,8 @@
-﻿open myType
+﻿module length
 
-let length (list : MyList) =
+open myType
+
+let main (list : MyList) =
     let len = ref 0
     let rec count (lst : MyList) =
         match lst with
@@ -8,8 +10,9 @@ let length (list : MyList) =
             len := !len + 1
             count MyList  
         | Empty -> len
-    count list      
+    let sol = !(count list)
+    sol     
         
 let myList = List (1, List (2, List (3, List (4, List (5,Empty)))))
 
-printfn "%A" (length myList)
+printfn "%A" (main myList)

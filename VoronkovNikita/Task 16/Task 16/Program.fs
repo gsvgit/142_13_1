@@ -35,7 +35,7 @@ let main (lst1: int list) (lst2: int list) =
     
     let res = help lst1 lst2   
     
-    let rec sum (lst1: int list) (lst2: int list) a b c =  
+    let rec sum lst1 lst2 a b c =  
         match lst1, lst2 with   
         | hd :: tl, [0]  
         | [0], hd :: tl -> hd :: tl

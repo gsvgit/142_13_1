@@ -20,8 +20,8 @@ let rev mlst =
 let length mlst =
     let rec leng mlst1 k =
         match mlst1 with
-        | Lst(chis, Empty) -> k+1
-        | Lst(chis, lst) -> leng lst k+1
+        | Lst(chis, Empty) -> k + 1
+        | Lst(chis, lst) -> leng lst k + 1
         | Empty -> 0
     leng mlst 0
 
