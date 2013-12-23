@@ -70,18 +70,20 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\..\..\..\..\..\..\F#_projects\142_13_1\BulgakovAndrey\BulgakovAndrey_14\BulgakovAndrey_14\BulgakovAndrey_14.fsproj">
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BulgakovAndrey_14\BulgakovAndrey_14\BulgakovAndrey_14.fsproj">
       <Name>BulgakovAndrey_14</Name>
       <Project>{8d45a56a-4bc7-4620-8b9b-5366c47dd2a1}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\..\F#_projects\142_13_1\BulgakovAndrey\BulgakovAndrey_15\BulgakovAndrey_15\BulgakovAndrey_15.fsproj">
+    <ProjectReference Include="..\..\BulgakovAndrey_15\BulgakovAndrey_15\BulgakovAndrey_15.fsproj">
       <Name>BulgakovAndrey_15</Name>
       <Project>{bedc831b-cfb3-48a6-8e7b-fb088b07ebdb}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
