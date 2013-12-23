@@ -1,4 +1,5 @@
-﻿open typeList
+﻿module length
+open typeList
 
 let lengthList (x: myList) = 
     let l = ref 0

@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e077e246-2d27-48ed-ae35-a529e37d0a32</ProjectGuid>
+    <ProjectGuid>fdd24c0e-3ee7-444a-96f3-4f1792bbad8f</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>task39</RootNamespace>
-    <AssemblyName>task39</AssemblyName>
+    <RootNamespace>GovorukhaOksana_37</RootNamespace>
+    <AssemblyName>GovorukhaOksana_37</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>task39</Name>
+    <Name>GovorukhaOksana_37</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\task39.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\GovorukhaOksana_37.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\task39.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\GovorukhaOksana_37.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -45,23 +45,23 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="matrix.fs" />
+    <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\task23\task23\task23.fsproj">
-      <Name>task23</Name>
-      <Project>{b0b91bff-09be-4acb-ba38-a1dcb4462bab}</Project>
+    <ProjectReference Include="..\..\GovorukhaOksana_23\GovorukhaOksana_23\GovorukhaOksana_23.fsproj">
+      <Name>GovorukhaOksana_23</Name>
+      <Project>{09e2eaa3-5b40-43e2-bc46-600588b2cd38}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\task37 %28addition with myList%29\task37\task37.fsproj">
-      <Name>task37</Name>
-      <Project>{22061f39-4db2-4bfb-8f2d-294cdb41dce8}</Project>
+    <ProjectReference Include="..\..\GovorukhaOksana_24\GovorukhaOksana_24\GovorukhaOksana_24.fsproj">
+      <Name>GovorukhaOksana_24</Name>
+      <Project>{2573b28d-4093-4bc0-b590-6df3b8f8320d}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\task38 %28multiplication with myList%29\task38\task38.fsproj">
-      <Name>task38</Name>
-      <Project>{525fce6c-8381-40a8-86ba-358784eb17a8}</Project>
+    <ProjectReference Include="..\..\GovorukhaOksana_44\GovorukhaOksana_44\GovorukhaOksana_44.fsproj">
+      <Name>GovorukhaOksana_44</Name>
+      <Project>{4c87d250-f3fa-404f-8988-ca3789516a2f}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
