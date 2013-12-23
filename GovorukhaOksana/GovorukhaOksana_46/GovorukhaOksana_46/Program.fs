@@ -1,4 +1,5 @@
-﻿open Hash 
+﻿module newHash
+open Hash 
 open Trees
 open typeList
 
