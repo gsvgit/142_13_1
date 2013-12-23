@@ -58,7 +58,7 @@ let main (lst: List<int>) (lst2: List<int>) =
         let x = f lst.Tail lst2.Tail
         if (lst.Head > lst2.Head) && (x = 1)
         then lst.Head :: (add (List.rev lst.Tail) (List.rev lst2.Tail) 0 lst.Head lst2.Head |> f3)                 
-        elif (lst.Head < lst.Head) &&  (x = 1)
+        elif (lst.Head < lst2.Head) &&  (x = 1)
         then lst.Head :: (add (List.rev lst.Tail) (List.rev lst2.Tail) 0 lst2.Head lst.Head |> f3)
         elif (lst.Head < lst2.Head) && (x = 2)
         then lst2.Head :: (add (List.rev lst2.Tail) (List.rev lst.Tail) 0 lst2.Head lst.Head |> f3)            
@@ -73,3 +73,6 @@ main [1; 9; 9] [1; 1; 1] |> printfn "%A"
 main [1; 8; 4] [-1; 7; 5] |> printfn "%A"
 main [1;0] [1; 3; 4] |> printfn "%A"
 main [1; 2; 3] [-1; 6; 2; 3] |> printfn "%A"
+main [-1; 9] [1; 8] |> printfn "%A"
+main [1; 1; 0] [-1; 9] |> printfn "%A"
+
