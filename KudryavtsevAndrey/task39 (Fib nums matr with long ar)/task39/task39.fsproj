@@ -49,17 +49,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\142_13_1\142_13_1\KudryavtsevAndrey\task23\task23\task23.fsproj">
+    <ProjectReference Include="..\..\task23\task23\task23.fsproj">
       <Name>task23</Name>
       <Project>{b0b91bff-09be-4acb-ba38-a1dcb4462bab}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\142_13_1\142_13_1\KudryavtsevAndrey\task37 %28addition with myList%29\task37\task37.fsproj">
+    <ProjectReference Include="..\..\task37 %28addition with myList%29\task37\task37.fsproj">
       <Name>task37</Name>
       <Project>{22061f39-4db2-4bfb-8f2d-294cdb41dce8}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\142_13_1\142_13_1\KudryavtsevAndrey\task38 %28multiplication with myList%29\task38\task38.fsproj">
+    <ProjectReference Include="..\..\task38 %28multiplication with myList%29\task38\task38.fsproj">
       <Name>task38</Name>
       <Project>{525fce6c-8381-40a8-86ba-358784eb17a8}</Project>
       <Private>True</Private>
