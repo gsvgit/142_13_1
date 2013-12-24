@@ -88,3 +88,5 @@ let main lst lst2 =
         else Lst (-1 ,mul tailRev tail2Rev 0 |> f |> f4)
 
 main (Lst (1, Lst (1, Lst (0, Lst (1, Empty))))) (Lst (1, Lst (1, Lst (0, Empty)))) |> printfn "%A"
+
+main (Lst (1, Lst (2, Empty))) (Lst (1, Lst (1, Empty))) |> printfn "%A"

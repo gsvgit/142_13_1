@@ -50,7 +50,10 @@ let main lst lst2 =
         let sum = ref 0        
         let rec add l1 l2 x s s2 = 
             match l1, l2 with 
-            | Empty, Empty -> Lst (x, Empty)
+            | Empty, Empty -> 
+                if x = 0
+                then Empty
+                else Lst (x, Empty)
             | Lst (hd1, tl1), Lst (hd2, tl2) -> 
                 sum := hd1 * s + hd2 * s2 + x 
                 if !sum > 9 
@@ -60,12 +63,11 @@ let main lst lst2 =
                 else Lst ((!sum + 10), (add tl1 tl2 -1 s s2))
             | Empty, Lst (hd, tl) 
             | Lst (hd, tl), Empty -> 
-                sum := hd * s + x 
+                sum := hd * 1 + x 
                 if !sum > 9 
                 then Lst (!sum % 10, (add tl Empty (!sum / 10) s s2))
-                elif !sum < 10 && !sum >= 0 
-                then Lst (!sum, (add tl Empty (!sum / 10) s s2)) 
-                else Lst (!sum + 10, (add tl Empty -1 s s2)) 
+                else Lst (!sum, (add tl Empty (!sum / 10) s s2)) 
+                 
         let f3 lst = 
            lst |> f |> f2
 
@@ -95,6 +97,7 @@ let main lst lst2 =
         else Lst (1, Lst (0, Empty)) 
     else failwith "error. incorrect input"
 
-main (Lst (1, Lst (1, Lst (0, Lst (1, Empty))))) (Lst (-1, Lst (0, Lst (1, Lst (0, Empty))))) |> printfn "%A"
-
+main (Lst (1, Lst (1, Lst (0, Lst (1, Empty))))) (Lst (-1, Lst (1, Lst (0, Empty)))) |> printfn "%A"
+main (Lst (1, Lst (1, Empty))) (Lst (1, Lst (1, Empty))) |> printfn "%A"
+main (Lst (1, Lst (7, Empty))) (Lst (1, Lst (4, Empty))) |> printfn "%A"
 

@@ -100,9 +100,5 @@ let f12 x =
             arr.[i] <- arr.[i - 1] ++ arr.[i - 2]
         arr
 
-f7 11 |> printfn "%A"
-f8 11 |> printfn "%A"
-f9 11 |> printfn "%A"
+
 f10 11 |> printfn "%A"
-f11 11 |> printfn "%A"
-f12 11 |> printfn "%A"
