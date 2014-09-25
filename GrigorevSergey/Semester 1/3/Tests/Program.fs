@@ -1,5 +1,5 @@
 ﻿open NUnit.Framework
-open Problem3.Main
+open Problem.Main
 
 [<Test>]
 let Test1 () = Assert.That(main [|1 .. 10|] 8, Is.EqualTo([|8; 9|]))

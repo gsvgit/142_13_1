@@ -1,6 +1,7 @@
-﻿namespace Problem3
+﻿namespace Problem
 
 module Main =
     let main inArray num =
-        Array.mapi (fun index elem -> if elem > num then index else -1) inArray
+        inArray
+        |> Array.mapi (fun index elem -> if elem > num then index else -1)
         |> Array.filter (fun elem -> if elem < 0 then false else true)
