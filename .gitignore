@@ -1,4 +1,4 @@
-*.exe
+﻿*.exe
 *.dll
 OzertsovAlexander/16/bin/Debug/FSharp.Core.xml
 OzertsovAlexander/16/bin/Debug/Сумма.exe.config
@@ -23,3 +23,6 @@ OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.fsproj.Fil
 OzertsovAlexander/22/ConvertToArr/ConvertToArr/obj/Debug/ConvertToArr.pdb
 
 *.orig
+_ReSharper.*
+*.user
+packages
