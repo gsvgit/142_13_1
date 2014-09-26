@@ -1,19 +1,19 @@
 ﻿namespace Problem
 
 module Main =
-    let main1 (lst: list<int>) (arr: array<int>) = // Using .Net library
+    let main1 lst arr = // Using .Net library
         let filterFunction x =
-            Array.fold (fun state elem -> if elem = x then false else state) true arr
+            Array.fold (fun state elem -> elem <> x && state) true arr
         lst |> List.filter filterFunction
 
-    let main2 (lst: list<int>) (arr: array<int>) = // Without usage of .Net library
+    let main2 lst arr = // Without usage of .Net library
         let rec exists elem index = 
-            if index >= arr.Length
+            if index >= Array.length arr
             then false
             elif elem = arr.[index]
             then true
             else exists elem (index + 1)
-        let rec fold (lst: list<int>) (acc: list<int>) =
+        let rec fold lst acc =
             match lst with
             | h :: t ->
                 if exists h 0

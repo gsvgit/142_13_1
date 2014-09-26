@@ -3,8 +3,9 @@
 module Main =
     let main1 inputArray lowBound highBound =
         inputArray
-        |> Array.mapi (fun index elem -> if elem > lowBound && elem < highBound then index else -1)
-        |> Array.filter (fun elem -> if elem < 0 then false else true)
+        |> Array.mapi (fun index elem -> if elem > lowBound && elem < highBound then Some(index) else None)
+        |> Array.filter (fun elem -> elem.IsSome)
+        |> Array.map (fun elem -> elem.Value)
 
     let main2 (inputArray: array<int>) lowBound highBound =
         let rec count i acc =
