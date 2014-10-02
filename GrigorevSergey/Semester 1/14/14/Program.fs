@@ -1,7 +1,7 @@
 ﻿namespace Problem
 
 module Main =
-    let main (a: array<int>) =
+    let main (a: array<_>) =
         let swap i j =
             let tmp = a.[i]
             a.[i] <- a.[j]

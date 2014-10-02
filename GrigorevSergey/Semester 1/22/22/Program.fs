@@ -1,8 +1,8 @@
 ﻿namespace Problem
 
 module Main =
-    let main (lst: list<int>) =
-        let a = Array.zeroCreate lst.Length
+    let main lst =
+        let a = List.length lst |> Array.zeroCreate
         let rec copy lst i =
             match lst with
             | h :: t ->

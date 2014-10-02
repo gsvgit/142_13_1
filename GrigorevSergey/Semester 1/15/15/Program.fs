@@ -3,8 +3,8 @@
 open System
 
 module Main =
-    let main (a: array<int>) =
-        let r = new Random()
+    let main (a: array<_>) =
+        let r = new Random ()
         let swap i j =
             if i <> j
             then 
@@ -14,9 +14,9 @@ module Main =
         let rec sort first last =
             if last - first >= 1
             then
-                swap first (first + r.Next(last - first + 1))
+                swap first (first + r.Next (last - first + 1))
                 let i = ref (first + 1)
-                for j in [(first + 1) .. last] do
+                for j in [first + 1 .. last] do
                     if a.[j] < a.[first]
                     then 
                         swap !i j

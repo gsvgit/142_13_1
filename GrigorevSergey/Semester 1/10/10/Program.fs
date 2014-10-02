@@ -14,7 +14,6 @@ module Main =
                 let c21 = a21 * b11 + a22 * b21
                 let c22 = a21 * b12 + a22 * b22
                 Matrix (c11, c12, c21, c22)
-            | _ -> ArgumentException () |> raise
         let rec pow n m =
             if n > 1
             then mult m (pow (n - 1) m)
@@ -23,8 +22,7 @@ module Main =
         let res =
             match pow (abs n - 1) startMatrix with
             | Matrix (a11, _, _, _) -> a11
-            | _ -> failwith "Unknown error!"
         match n with
         | 0 -> 0
-        | n when (n % 2 = 0 && n < 0) -> -res
+        | n when n % 2 = 0 && n < 0 -> -res
         | _ -> res

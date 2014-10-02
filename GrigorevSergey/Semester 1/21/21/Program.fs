@@ -1,17 +1,19 @@
 ﻿namespace Problem
 
 module Main =
-    let main (a: array<int>) (b: array<int>) =
+    let main a b =
+        let al = Array.length a
+        let bl = Array.length b
         let rec sum k n =
             if k < n
             then b.[k] + sum (k + 1) n
             else 0
         let rec cycle n =
-            if n < a.Length
+            if n < al
             then
-                if a.[n] >= 0 && a.[n] < b.Length
+                if a.[n] >= 0 && a.[n] < bl
                 then sum 0 (a.[n] + 1) + cycle (n + 1)
-                else sum 0 b.Length + cycle (n + 1)
+                else sum 0 bl + cycle (n + 1)
             else 0
         cycle 0
 
