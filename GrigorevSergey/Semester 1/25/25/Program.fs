@@ -1,7 +1,7 @@
 ﻿namespace Problem
 
 module Main =
-    let main str =
+    let stringHash str =
         let l = String.length str
         let rec sum i acc =
             if i < l

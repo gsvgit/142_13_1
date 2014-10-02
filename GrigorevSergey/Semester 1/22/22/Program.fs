@@ -1,7 +1,7 @@
 ﻿namespace Problem
 
 module Main =
-    let main lst =
+    let mainConvert lst =
         let a = List.length lst |> Array.zeroCreate
         let rec copy lst i =
             match lst with

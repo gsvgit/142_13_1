@@ -5,7 +5,7 @@ open System
 module Main =
     let main n =
         if n < 0
-        then new ArgumentOutOfRangeException() |> raise
+        then new ArgumentOutOfRangeException () |> raise
         let arr = Array.zeroCreate (n + 1)
         let rec fib k a b =
             if k = n

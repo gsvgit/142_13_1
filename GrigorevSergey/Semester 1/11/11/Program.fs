@@ -5,7 +5,7 @@ open System
 module Main =
     type Matrix<'T> = Matrix of 'T * 'T * 'T * 'T
 
-    let fib n =
+    let main n =
         let mult a b =
             match a, b with
             | Matrix (a11, a12, a21, a22), Matrix (b11, b12, b21, b22) ->

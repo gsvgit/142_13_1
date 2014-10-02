@@ -40,4 +40,4 @@ module Main =
         | ListNode (h, t) -> (iterateTree func state h) :: iterateList func state t
         | ListLeaf -> []
 
-    let sumOfLengths lst = iterateList (fun state elem -> state + String.length elem) 0 lst
+    let main lst = iterateList (fun state elem -> state + String.length elem) 0 lst

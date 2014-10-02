@@ -1,7 +1,7 @@
 ﻿namespace Problem
 
 module Main =
-    let hash str =
+    let stringHash str =
         let l = String.length str
         let rec sum i acc =
             if i < l
@@ -9,7 +9,7 @@ module Main =
             else acc
         sum 0 0
 
-    let rec main lst =
+    let rec hashAll lst =
         match lst with
-        | h :: t -> hash h :: main t
+        | h :: t -> stringHash h :: hashAll t
         | [] -> []

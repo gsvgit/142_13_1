@@ -22,3 +22,5 @@ module Main =
         match mlst with
         | Leaf -> 0
         | Node (_, t) -> 1 + myListLength t
+
+    let main = myListLength

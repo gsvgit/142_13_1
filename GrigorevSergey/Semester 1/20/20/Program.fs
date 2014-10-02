@@ -22,7 +22,7 @@ module Main =
             | [] -> acc
         fold lst []
 
-    let main a b = 
+    let mainFilter a b = 
         let x = main1 a b
         let y = main2 a b
         if x = y

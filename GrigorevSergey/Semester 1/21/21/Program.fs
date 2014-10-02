@@ -1,7 +1,7 @@
 ﻿namespace Problem
 
 module Main =
-    let main a b =
+    let mainSum a b =
         let al = Array.length a
         let bl = Array.length b
         let rec sum k n =
@@ -17,7 +17,7 @@ module Main =
             else 0
         cycle 0
 
-    let mainSum arr1 arr2 =
+    let mainSumOrig arr1 arr2 =
         let res = ref 0
         for i in arr1 do
             let n = 
